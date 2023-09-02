@@ -1,0 +1,634 @@
+{
+    "problem_set": [
+        {
+            "problem_id": "sort_even_numbers_in_array",
+            "description": "This problem tests the ability to work with arrays and sorting algorithms. The task is to implement a function that takes an array of integers and sorts the even numbers in ascending order, while leaving the odd numbers in their original positions.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that takes an array of integers and sorts the even numbers in ascending order while leaving the odd numbers in their original positions."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that takes an array of integers and sorts the even numbers in ascending order while leaving the odd numbers in their original positions.\n\nTest Cases:\n- Input: [5, 3, 2, 8, 1, 4]\n  Expected Output: [5, 3, 2, 8, 1, 4]\n- Input: [0, 1, 2, 3, 4, 5]\n  Expected Output: [0, 1, 2, 3, 4, 5]"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_sort_even_numbers():\n  assert sort_even_numbers([5, 3, 2, 8, 1, 4]) == [5, 3, 2, 8, 1, 4]\n  assert sort_even_numbers([0, 1, 2, 3, 4, 5]) == [0, 1, 2, 3, 4, 5]"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_0():\n  assert function([5, 3, 2, 8, 1, 4]) == [5, 3, 2, 8, 1, 4]\n  assert function([0, 1, 2, 3, 4, 5]) == [0, 1, 2, 3, 4, 5]"
+                }
+            ],
+            "id": "0",
+            "model": "GPT-4"
+        },
+        {
+            "problem_id": "reverse_vowels_in_string",
+            "description": "This problem tests the ability to manipulate strings. The task is to implement a function that reverses the vowels in a given string.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that reverses the vowels in a given string."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that reverses the vowels in a given string.\n\nTest Cases:\n- Input: 'hello'\n  Expected Output: 'holle'\n- Input: 'world'\n  Expected Output: 'world'"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_reverse_linked_list():\n  assert reverse_linked_list([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert reverse_linked_list([1]) == [1]"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_2():\n  assert function([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert function([1]) == [1]"
+                }
+            ],
+            "id": "1",
+            "model": "GPT-4"
+        },
+        {
+            "problem_id": "reverse_singly_linked_list",
+            "description": "This problem tests the ability to manipulate data structures, specifically linked lists. The task is to implement a function that reverses a singly linked list.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that reverses a singly linked list."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that reverses a singly linked list.\n\nTest Cases:\n- Input: 1 -> 2 -> 3 -> 4\n  Expected Output: 4 -> 3 -> 2 -> 1\n- Input: 1\n  Expected Output: 1"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_reverse_linked_list():\n  assert reverse_linked_list([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert reverse_linked_list([1]) == [1]"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_reverse_linked_list():\n  assert function([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert function([1]) == [1]"
+                }
+            ],
+            "id": "2",
+            "model": "GPT-4"
+        },
+        {
+            "problem_id": "fibonacci_recursive",
+            "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the nth Fibonacci number using recursion.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that calculates the nth Fibonacci number using recursion."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that calculates the nth Fibonacci number using recursion.\n\nTest Cases:\n- Input: 0\n  Expected Output: 0\n- Input: 1\n  Expected Output: 1"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_fibonacci():\n  assert fibonacci(0) == 0\n  assert fibonacci(1) == 1"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_3():\n  assert function(0) == 0\n  assert function(1) == 1"
+                }
+            ],
+            "id": "3",
+            "model": "GPT-4"
+        },
+        {
+            "problem_id": "max_product_of_two_integers",
+            "description": "This problem tests the ability to work with basic algorithms. The task is to find the maximum product of any two integers in a given list.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that finds the maximum product of any two integers in a given list."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that finds the maximum product of any two integers in a given list.\n\nTest Cases:\n- Input: [1, 2, 3, 4]\n  Expected Output: 12\n- Input: [-1, -2, -3, -4]\n  Expected Output: 12"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_max_product():\n  assert max_product([1, 2, 3, 4]) == 12\n  assert max_product([-1, -2, -3, -4]) == 12"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_4():\n  assert function([1, 2, 3, 4]) == 12\n  assert function([-1, -2, -3, -4]) == 12"
+                }
+            ],
+            "id": "4",
+            "model": "GPT-4"
+        },
+        {
+            "problem_id": "check_if_binary_tree_is_balanced",
+            "description": "This problem tests the ability to work with tree data structures. The task is to implement a function that checks if a binary tree is balanced.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that checks if a binary tree is balanced."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that checks if a binary tree is balanced.\n\nTest Cases:\n- Input: Balanced Tree\n  Expected Output: True\n- Input: Unbalanced Tree\n  Expected Output: False"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_is_balanced():\n  assert is_balanced('Balanced Tree') == True\n  assert is_balanced('Unbalanced Tree') == False"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_5():\n  assert function('Balanced Tree') == True\n  assert function('Unbalanced Tree') == False"
+                }
+            ],
+            "id": "5",
+            "model": "GPT-4"
+        },
+        {
+            "problem_id": "validate_email_address",
+            "description": "This problem tests the ability to work with string manipulation and regular expressions. The task is to implement a function that validates an email address according to certain rules.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that validates an email address according to certain rules."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that validates an email address according to certain rules.\n\nTest Cases:\n- Input: 'test@example.com'\n  Expected Output: True\n- Input: 'test.example.com'\n  Expected Output: False"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_validate_email():\n  assert validate_email('test@example.com') == True\n  assert validate_email('test.example.com') == False"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_6():\n  assert function('test@example.com') == True\n  assert function('test.example.com') == False"
+                }
+            ],
+            "id": "6",
+            "model": "GPT-4"
+        },
+        {
+            "problem_id": "range_bitwise_and",
+            "description": "This problem tests the ability to work with bitwise operations. The task is to implement a function that calculates the bitwise AND of all numbers in a range from m to n.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that calculates the bitwise AND of all numbers in a range from m to n."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that calculates the bitwise AND of all numbers in a range from m to n.\n\nTest Cases:\n- Input: m = 5, n = 7\n  Expected Output: 4\n- Input: m = 0, n = 1\n  Expected Output: 0"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_range_bitwise_and():\n  assert range_bitwise_and(5, 7) == 4\n  assert range_bitwise_and(0, 1) == 0"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_7():\n  assert function(5, 7) == 4\n  assert function(0, 1) == 0"
+                }
+        
+            ],
+            "id": "7",
+            "model": "GPT-4"
+        },
+        {
+            "problem_id": "bubble_sort_array",
+            "description": "This problem tests the ability to work with arrays and sorting. The task is to implement a function that sorts an array using the bubble sort algorithm.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that sorts an array using the bubble sort algorithm."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that sorts an array using the bubble sort algorithm.\n\nTest Cases:\n- Input: [5, 3, 1, 4, 6]\n  Expected Output: [1, 3, 4, 5, 6]\n- Input: [1, 2, 3, 4, 5]\n  Expected Output: [1, 2, 3, 4, 5]"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_bubble_sort():\n  assert bubble_sort([5, 3, 1, 4, 6]) == [1, 3, 4, 5, 6]\n  assert bubble_sort([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_8():\n  assert function([5, 3, 1, 4, 6]) == [1, 3, 4, 5, 6]\n  assert function([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]"
+                }
+            ],
+            "id": "8",
+            "model": "GPT-4"
+        },
+        {
+            "problem_id": "depth_first_search",
+            "description": "This problem tests the ability to work with graphs. The task is to implement a function that performs a depth-first search on a graph represented as an adjacency list.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that performs a depth-first search on a graph represented as an adjacency list."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that performs a depth-first search on a graph represented as an adjacency list.\n\nTest Cases:\n- Input: graph = {1: [2, 3], 2: [4], 3: [], 4: []}, start = 1\n  Expected Output: [1, 2, 4, 3]\n- Input: graph = {1: [2, 3], 2: [1], 3: [1]}, start = 1\n  Expected Output: [1, 2, 3]"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "Test Cases:\n- Input: graph = {1: [2, 3], 2: [4], 3: [], 4: []}, start = 1\n  Expected Output: [1, 2, 4, 3]\n- Input: graph = {1: [2, 3], 2: [1], 3: [1]}, start = 1\n  Expected Output: [1, 2, 3]"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_9():\n  assert function({1: [2, 3], 2: [1], 3: [1]}, 1) == [1, 2, 3]\n  assert function({1: [2, 3], 2: [4], 3: [], 4: []}, 1) == [1, 2, 4, 3]"
+                }
+            ],
+            "id": "9",
+            "model": "GPT-4"
+        },
+        {
+            "problem_id": "factorial_recursive_2",
+            "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the factorial of a given number using recursion.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that calculates the factorial of a given number using recursion."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that calculates the factorial of a given number using recursion.\n\nTest Cases:\n- Input: 5\n  Expected Output: 120\n- Input: 1\n  Expected Output: 1"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "Test Cases:\n- Input: 5\n  Expected Output: 120\n- Input: 1\n  Expected Output: 1"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_10():\n  assert function(5) == 120\n  assert function(1) == 1"
+                }
+            ],
+            "id": "10",
+            "model": "GPT-4"
+        },
+        {
+            "category": "Math",
+            "problem_id": "multiply_list",
+            "model": "Claude-2",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Write a function to multiply numbers in a list"
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Write a function called multiply_list that takes a list of numbers and returns the product of all the numbers. Include test cases for an empty list, a single number, and multiple numbers."
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_empty():\n  nums = []\n  assert multiply_list(nums) == 1\n\ndef test_single():\n  nums = [2]\n  assert multiply_list(nums) == 2\n  \ndef test_multi():\n  nums = [1, 2, 3]\n  assert multiply_list(nums) == 6"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_1():\n  input = []\n  assert function(input) == 1\n\ndef test_2():\n  input = [2]\n  assert function(input) == 2\n\ndef test_3():\n  input = [1, 2, 3]\n  assert function(input) == 6"
+                }
+            ]
+        },
+        {
+            "category": "String",
+            "problem_id": "count_vowels",
+            "model": "Claude-2",
+            "id": "12",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Count vowels in a string"
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Write a function called count_vowels that takes a string and returns the number of vowels. Include test cases for an empty string, a string with no vowels, and a string with multiple vowels."
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_empty():\n  text = ''\n  assert count_vowels(text) == 0\n\ndef test_no_vowels():\n  text = 'try'\n  assert count_vowels(text) == 0\n\ndef test_multi():\n  text = 'apple'\n  assert count_vowels(text) == 2"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_1():\n  input = ''\n  assert function(input) == 0\n\ndef test_2():\n  input = 'try'\n  assert function(input) == 0\n\ndef test_3():\n  input = 'apple'\n  assert function(input) == 2"
+                }
+            ]
+        },
+        {
+            "category": "String",
+            "problem_id": "is_palindrome",
+            "id": "13",
+            "model": "Claude-2",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Check if a string is a palindrome"
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Write a function called is_palindrome that takes a string and returns True if it is a palindrome, False otherwise. Include test cases for an empty string, a non-palindrome string, and a palindrome string."
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_empty():\n  text = ''\n  assert is_palindrome(text) == True\n\ndef test_not_palindrome():\n  text = 'hello'\n  assert is_palindrome(text) == False\n\ndef test_palindrome():\n  text = 'racecar'\n  assert is_palindrome(text) == True"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_1():\n  input = ''\n  assert function(input) == True\n\ndef test_2():\n  input = 'hello'\n  assert function(input) == False\n\ndef test_3():\n  input = 'racecar'\n  assert function(input) == True"
+                }
+            ]
+        },
+        {
+            "category": "String",
+            "problem_id": "longest_word",
+            "id": "14",
+            "model": "Claude-2",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Find longest word in sentence"
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Write a function called longest_word that takes a sentence and returns the longest word. Include test cases for an empty sentence, a sentence with one word, and a sentence with multiple words."
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_empty():\n  sentence = ''\n  assert longest_word(sentence) == ''\n\ndef test_single():\n  sentence = 'hi'\n  assert longest_word(sentence) == 'hi'\n\ndef test_multi():\n  sentence = 'hello there my friend'\n  assert longest_word(sentence) == 'hello'"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2(): \n  input = 'hi'\n  assert function(input) == 'hi'\n\ndef test_3():\n  input = 'hello there my friend'\n  assert function(input) == 'hello'"
+                }
+            ]
+        },
+        {
+            "category": "String",
+            "problem_id": "capitalize",
+            "id": "15",
+            "model": "Claude-2",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Capitalize words in string"
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Write a function called capitalize that takes a string and returns a copy with the first letter of each word capitalized. Include test cases for an empty string, a single word, and multiple words."
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_empty():\n  text = ''\n  assert capitalize(text) == ''\n\ndef test_single():\n  text = 'hello'\n  assert capitalize(text) == 'Hello'\n\ndef test_multi():\n  text = 'hello world'\n  assert capitalize(text) == 'Hello World'"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'hello'\n  assert function(input) == 'Hello'\n\ndef test_3():\n  input = 'hello world'\n  assert function(input) == 'Hello World'"
+                }
+            ]
+        },
+        {
+            "category": "String",
+            "problem_id": "reverse_string",
+            "id": "16",
+            "model": "Claude-2",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Reverse a string"
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Write a function called reverse_string that takes a string and returns it reversed. Include test cases for an empty string, a single character, and a multi-character string."
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_empty():\n  text = ''\n  assert reverse_string(text) == ''\n\ndef test_single():\n  text = 'a'\n  assert reverse_string(text) == 'a'\n\ndef test_multi():\n  text = 'abc'\n  assert reverse_string(text) == 'cba'"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'a'\n  assert function(input) == 'a'\n\ndef test_3():\n  input = 'abc'\n  assert function(input) == 'cba'"
+                }
+            ]
+        },
+        {
+            "category": "Math",
+            "problem_id": "count_digits",
+            "id": "17",
+            "model": "Claude-2",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Count digits in number"
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Write a function called count_digits that takes an integer and returns the number of digits. Include test cases for 0, a single digit number, and a multi-digit number."
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_zero():\n  num = 0\n  assert count_digits(num) == 1\n   \ndef test_single():\n  num = 5\n  assert count_digits(num) == 1\n\ndef test_multi():\n  num = 348\n  assert count_digits(num) == 3"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_1():\n  input = 0\n  assert function(input) == 1\n\ndef test_2():\n  input = 5\n  assert function(input) == 1\n\ndef test_3():\n  input = 348\n  assert function(input) == 3"
+                }
+            ]
+        },
+        {
+            "category": "Math",
+            "problem_id": "factorial",
+            "id": "18",
+            "model": "Claude-2",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Calculate factorial"
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Write a function called factorial that takes a number and returns its factorial. Include test cases for 0, 1, and a larger number."
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_zero():\n  num = 0\n  assert factorial(num) == 1\n\ndef test_single():\n  num = 1\n assert factorial(num) == 1\n\ndef test_multi():\n  num = 5\n  assert factorial(num) == 120"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_1():\n  input = 0\n  assert function(input) == 1\n\ndef test_2():\n  input = 1\n  assert function(input) == 1\n\ndef test_3():\n  input = 5\n  assert function(input) == 120"
+                }
+            ]
+        },
+        {
+            "category": "Math",
+            "problem_id": "fibonacci",
+            "id": "19",
+            "model": "Claude-2",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Generate Fibonacci sequence"
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Write a function called fibonacci that takes a number and returns the Fibonacci sequence up to that number. Include test cases for 0, 1, and a larger number."
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_zero():\n  num = 0\n  assert fibonacci(num) == [0]\n\ndef test_one():\n  num = 1\n  assert fibonacci(num) == [0, 1]\n   \ndef test_multi():\n  num = 6\n  assert fibonacci(num) == [0, 1, 1, 2, 3, 5]"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_1():\n  input = 0\n  assert function(input) == [0]\n\ndef test_2():\n  input = 1\n  assert function(input) == [0, 1]\n\ndef test_3():\n  input = 6\n  assert function(input) == [0, 1, 1, 2, 3, 5]"
+                }
+            ]
+        },
+        {
+            "category": "Logic",
+            "problem_id": "fizzbuzz",
+            "id": "20",
+            "model": "Claude-2",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "FizzBuzz"
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Write a function called fizzbuzz that prints the numbers 1 to 100, but printing 'Fizz' for multiples of 3, 'Buzz' for multiples of 5, and 'FizzBuzz' for multiples of both 3 and 5. Include test cases."
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_fizz():\n  num = 3\n  assert fizzbuzz(num) == 'Fizz'\n\ndef test_buzz():\n  num = 5\n  assert fizzbuzz(num) == 'Buzz'\n\ndef test_fizzbuzz():\n  num = 15\n  assert fizzbuzz(num) == 'FizzBuzz'"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_1():\n  input = 3\n  assert function(input) == 'Fizz'\n\ndef test_2():\n  input = 5 \n  assert function(input) == 'Buzz'\n\ndef test_3():\n input = 15\n assert function(input) == 'FizzBuzz'"
+                }
+            ]
+        },
+        {
+            "problem_id": "find_first_non_repeating_char",
+            "model": "Bard",
+            "id": "21",
+            "description": "This problem tests the ability to work with hash tables. The task is to implement a function that finds the first non-repeating character in a given string.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that finds the first non-repeating character in a given string."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that finds the first non-repeating character in a given string.\n\nTest Cases:\n- Input: 'abca'\n  Expected Output: 'b'\n- Input: 'ccbaab'\n  Expected Output: 'b'"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_find_first_non_repeating_char():\n  assert find_first_non_repeating_char('abca') == 'b'\n  assert find_first_non_repeating_char('ccbaab') == 'b'"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_21():\n  assert function('abca') == 'b'\n  assert function('ccbaab') == 'b'"
+                }
+            ]
+        },
+        {
+            "problem_id": "find_longest_substring_without_repeating_characters",
+            "model": "Bard",
+            "id": "22",
+            "description": "This problem tests the ability to work with hash sets. The task is to implement a function that finds the longest substring without repeating characters in a given string.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that finds the longest substring without repeating characters in a given string."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that finds the longest substring without repeating characters in a given string.\n\nTest Cases:\n- Input: 'abcabcbb'\n  Expected Output: 'abc'\n- Input: 'bbbbb'\n  Expected Output: 'b'"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_find_longest_substring_without_repeating_characters():\n  assert find_longest_substring_without_repeating_characters('abcabcbb') == 'abc'\n  assert find_longest_substring_without_repeating_characters('bbbbb') == 'b'"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_22():\n  assert function('abcabcbb') == 'abc'\n  assert function('bbbbb') == 'b'"
+                }
+            ]
+        },
+        {
+            "problem_id": "longest_substring_with_k_distinct_characters",
+            "model": "Bard",
+            "id": "23",
+            "description": "This problem tests the ability to work with hash maps. The task is to implement a function that finds the longest substring with k distinct characters in a given string.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that finds the longest substring with k distinct characters in a given string."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that finds the longest substring with k distinct characters in a given string.\n\nTest Cases:\n- Input: 'abcabcbb', k = 2\n  Expected Output: 'abc'\n- Input: 'bbbbb', k = 3\n  Expected Output: ''"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_longest_substring_with_k_distinct_characters():\n  assert longest_substring_with_k_distinct_characters('abcabcbb', 2) == 'abc'\n  assert longest_substring_with_k_distinct_characters('bbbbb', 3) == ''"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_23():\n  assert function('abcabcbb', 2) == 'abc'\n  assert function('bbbbb', 3) == ''"
+                }
+            ]
+        },
+        {
+            "problem_id": "longest_palindromic_substring",
+            "model": "Bard",
+            "id": "24",
+            "description": "This problem tests the ability to work with dynamic programming. The task is to implement a function that finds the longest palindromic substring in a given string.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that finds the longest palindromic substring in a given string."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that finds the longest palindromic substring in a given string.\n\nTest Cases:\n- Input: 'babad'\n  Expected Output: 'bab'\n- Input: 'cbbd'\n  Expected Output: 'bb'"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_longest_palindromic_substring():\n  assert longest_palindromic_substring('babad') == 'bab'\n  assert longest_palindromic_substring('cbbd') == 'bb'"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_24():\n  assert function('babad') == 'bab'\n  assert function('cbbd') == 'bb'"
+                }
+            ]
+        },
+        {
+            "problem_id": "longest_common_substring",
+            "model": "Bard",
+            "id": "25",
+            "description": "This problem tests the ability to work with dynamic programming. The task is to implement a function that finds the longest common substring between two strings.",
+            "prompts": [
+                {
+                    "type": "prompt_only",
+                    "content": "Implement a function that finds the longest common substring between two strings."
+                },
+                {
+                    "type": "prompt_with_tests",
+                    "content": "Implement a function that finds the longest common substring between two strings.\n\nTest Cases:\n- Input: 'abcde', 'bcde'\n  Expected Output: 'bcde'\n- Input: 'abcdef', 'abef'\n  Expected Output: 'abe'"
+                },
+                {
+                    "type": "prompt_tests_only",
+                    "content": "def test_longest_common_substring():\n  assert longest_common_substring('abcde', 'bcde') == 'bcde'\n  assert longest_common_substring('abcdef', 'abef') == 'abe'"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "def test_generic_25():\n  assert function('abcde', 'bcde') == 'bcde'\n  assert function('abcdef', 'abef') == 'abe'"
+                }
+            ]
+        }
+        
+        
+        
+        
+
+        
+    ]
+}
