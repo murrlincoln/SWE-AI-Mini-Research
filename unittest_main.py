@@ -11,7 +11,7 @@ def linked_list_to_list(head):
 class TestCodingProblems(unittest.TestCase):
 
     def test_sort_even_numbers(self):
-        self.assertEqual(main.sort_even_numbers([5, 3, 2, 8, 1, 4]), [5, 3, 2, 8, 1, 4])
+        self.assertEqual(main.sort_even_numbers([5, 3, 2, 8, 1, 4]), [5, 3, 2, 4, 1, 8])
         self.assertEqual(main.sort_even_numbers([0, 1, 2, 3, 4, 5]), [0, 1, 2, 3, 4, 5])
         self.assertEqual(main.sort_even_numbers([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]), [9, 0, 7, 2, 5, 4, 3, 6, 1, 8])
         self.assertEqual(main.sort_even_numbers([1, 3, 5, 7]), [1, 3, 5, 7])
