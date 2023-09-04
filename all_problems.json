@@ -14,11 +14,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_sort_even_numbers():\n  assert sort_even_numbers([5, 3, 2, 8, 1, 4]) == [5, 3, 2, 8, 1, 4]\n  assert sort_even_numbers([0, 1, 2, 3, 4, 5]) == [0, 1, 2, 3, 4, 5]"
+                    "content": "def test_sort_even_numbers():\n  assert sort_even_numbers([5, 3, 2, 8, 1, 4]) == [5, 3, 2, 4, 1, 8]\n  assert sort_even_numbers([0, 1, 2, 3, 4, 5]) == [0, 1, 2, 3, 4, 5]"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_0():\n  assert function([5, 3, 2, 8, 1, 4]) == [5, 3, 2, 8, 1, 4]\n  assert function([0, 1, 2, 3, 4, 5]) == [0, 1, 2, 3, 4, 5]"
+                    "content": "def test_generic_0():\n  assert function([5, 3, 2, 8, 1, 4]) == [5, 3, 2, 4, 1, 8]\n  assert function([0, 1, 2, 3, 4, 5]) == [0, 1, 2, 3, 4, 5]"
                 }
             ],
             "id": "0",
