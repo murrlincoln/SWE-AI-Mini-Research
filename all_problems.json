@@ -10,15 +10,23 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Implement a function that takes an array of integers and sorts the even numbers in ascending order while leaving the odd numbers in their original positions.\n\nTest Cases:\n- Input: [5, 3, 2, 8, 1, 4]\n  Expected Output: [5, 3, 2, 8, 1, 4]\n- Input: [0, 1, 2, 3, 4, 5]\n  Expected Output: [0, 1, 2, 3, 4, 5]"
+                    "content": "Implement a function that takes an array of integers and sorts the even numbers in ascending order while leaving the odd numbers in their original positions.\n\nTest Cases:\n- Input: [5, 3, 2, 8, 1, 4]\n  Expected Output: [5, 3, 2, 4, 1, 8]\n- Input: [0, 1, 2, 3, 4, 5]\n  Expected Output: [0, 1, 2, 3, 4, 5]"
                 },
                 {
                     "type": "prompt_tests_only",
+<<<<<<< HEAD
+                    "content": "Write a Python function to pass the following tests: def test_sort_even_numbers():\n  assert sort_even_numbers([5, 3, 2, 8, 1, 4]) == [5, 3, 2, 4, 1, 8]\n  assert sort_even_numbers([0, 1, 2, 3, 4, 5]) == [0, 1, 2, 3, 4, 5]"
+                },
+                {
+                    "type": "prompt_generic_tests",
+                    "content": "Write a Python function to pass the following tests: def test_generic_0():\n  assert function([5, 3, 2, 8, 1, 4]) == [5, 3, 2, 4, 1, 8]\n  assert function([0, 1, 2, 3, 4, 5]) == [0, 1, 2, 3, 4, 5]"
+=======
                     "content": "def test_sort_even_numbers():\n  assert sort_even_numbers([5, 3, 2, 8, 1, 4]) == [5, 3, 2, 4, 1, 8]\n  assert sort_even_numbers([0, 1, 2, 3, 4, 5]) == [0, 1, 2, 3, 4, 5]"
                 },
                 {
                     "type": "prompt_generic_tests",
                     "content": "def test_generic_0():\n  assert function([5, 3, 2, 8, 1, 4]) == [5, 3, 2, 4, 1, 8]\n  assert function([0, 1, 2, 3, 4, 5]) == [0, 1, 2, 3, 4, 5]"
+>>>>>>> 5684381d195d3272b850a758097d4dcd5cc4da90
                 }
             ],
             "id": "0",
@@ -38,11 +46,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_reverse_linked_list():\n  assert reverse_linked_list([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert reverse_linked_list([1]) == [1]"
+                    "content": "Write a Python function to pass the following tests: def test_reverse_vowels():\n  assert reverse_vowels('hello') == 'holle'\n  assert reverse_vowels('world') == 'world'"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_2():\n  assert function([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert function([1]) == [1]"
+                    "content": "Write a Python function to pass the following tests: def test_generic_2():\n  assert function('hello') == 'holle'\n  assert function('world') == 'world'"
                 }
             ],
             "id": "1",
@@ -62,11 +70,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_reverse_linked_list():\n  assert reverse_linked_list([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert reverse_linked_list([1]) == [1]"
+                    "content": "Write a Python function to pass the following tests: def test_reverse_linked_list():\n  assert reverse_linked_list([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert reverse_linked_list([1]) == [1]"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_reverse_linked_list():\n  assert function([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert function([1]) == [1]"
+                    "content": "Write a Python function to pass the following tests: def test_generic_reverse_linked_list():\n  assert function([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert function([1]) == [1]"
                 }
             ],
             "id": "2",
@@ -82,15 +90,15 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Implement a function that calculates the nth Fibonacci number using recursion.\n\nTest Cases:\n- Input: 0\n  Expected Output: 0\n- Input: 1\n  Expected Output: 1"
+                    "content": "Implement a function that calculates the nth Fibonacci number using recursion.\n\nTest Cases:\n- Input: 0\n  Expected Output: 0\n- Input: 1\n  Expected Output: 1 \n- Input: 6\n Expected Output: 8"
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_fibonacci():\n  assert fibonacci(0) == 0\n  assert fibonacci(1) == 1"
+                    "content": "Write a Python function to pass the following tests: def test_fibonacci():\n  assert fibonacci(0) == 0\n  assert fibonacci(1) == 1 \n assert fibonacci(6) = 8"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_3():\n  assert function(0) == 0\n  assert function(1) == 1"
+                    "content": "Write a Python function to pass the following tests: def test_generic_3():\n  assert function(0) == 0\n  assert function(1) == 1\n assert function(6) == 8"
                 }
             ],
             "id": "3",
@@ -110,11 +118,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_max_product():\n  assert max_product([1, 2, 3, 4]) == 12\n  assert max_product([-1, -2, -3, -4]) == 12"
+                    "content": "Write a Python function to pass the following tests: def test_max_product():\n  assert max_product([1, 2, 3, 4]) == 12\n  assert max_product([-1, -2, -3, -4]) == 12"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_4():\n  assert function([1, 2, 3, 4]) == 12\n  assert function([-1, -2, -3, -4]) == 12"
+                    "content": "Write a Python function to pass the following tests: def test_generic_4():\n  assert function([1, 2, 3, 4]) == 12\n  assert function([-1, -2, -3, -4]) == 12"
                 }
             ],
             "id": "4",
@@ -134,11 +142,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_is_balanced():\n  assert is_balanced('Balanced Tree') == True\n  assert is_balanced('Unbalanced Tree') == False"
+                    "content": "Write a Python function to pass the following tests: def test_is_balanced():\n  assert is_balanced('Balanced Tree') == True\n  assert is_balanced('Unbalanced Tree') == False"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_5():\n  assert function('Balanced Tree') == True\n  assert function('Unbalanced Tree') == False"
+                    "content": "Write a Python function to pass the following tests: def test_generic_5():\n  assert function('Balanced Tree') == True\n  assert function('Unbalanced Tree') == False"
                 }
             ],
             "id": "5",
@@ -158,11 +166,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_validate_email():\n  assert validate_email('test@example.com') == True\n  assert validate_email('test.example.com') == False"
+                    "content": "Write a Python function to pass the following tests: def test_validate_email():\n  assert validate_email('test@example.com') == True\n  assert validate_email('test.example.com') == False"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_6():\n  assert function('test@example.com') == True\n  assert function('test.example.com') == False"
+                    "content": "Write a Python function to pass the following tests: def test_generic_6():\n  assert function('test@example.com') == True\n  assert function('test.example.com') == False"
                 }
             ],
             "id": "6",
@@ -182,13 +190,12 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_range_bitwise_and():\n  assert range_bitwise_and(5, 7) == 4\n  assert range_bitwise_and(0, 1) == 0"
+                    "content": "Write a Python function to pass the following tests: def test_range_bitwise_and():\n  assert range_bitwise_and(5, 7) == 4\n  assert range_bitwise_and(0, 1) == 0"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_7():\n  assert function(5, 7) == 4\n  assert function(0, 1) == 0"
+                    "content": "Write a Python function to pass the following tests: def test_generic_7():\n  assert function(5, 7) == 4\n  assert function(0, 1) == 0"
                 }
-        
             ],
             "id": "7",
             "model": "GPT-4"
@@ -207,11 +214,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_bubble_sort():\n  assert bubble_sort([5, 3, 1, 4, 6]) == [1, 3, 4, 5, 6]\n  assert bubble_sort([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]"
+                    "content": "Write a Python function to pass the following tests: def test_bubble_sort():\n  assert bubble_sort([5, 3, 1, 4, 6]) == [1, 3, 4, 5, 6]\n  assert bubble_sort([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_8():\n  assert function([5, 3, 1, 4, 6]) == [1, 3, 4, 5, 6]\n  assert function([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]"
+                    "content": "Write a Python function to pass the following tests: def test_generic_8():\n  assert function([5, 3, 1, 4, 6]) == [1, 3, 4, 5, 6]\n  assert function([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]"
                 }
             ],
             "id": "8",
@@ -231,11 +238,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "Test Cases:\n- Input: graph = {1: [2, 3], 2: [4], 3: [], 4: []}, start = 1\n  Expected Output: [1, 2, 4, 3]\n- Input: graph = {1: [2, 3], 2: [1], 3: [1]}, start = 1\n  Expected Output: [1, 2, 3]"
+                    "content": "Write a Python function to pass the following tests: Test Cases:\n- Input: graph = {1: [2, 3], 2: [4], 3: [], 4: []}, start = 1\n  Expected Output: [1, 2, 4, 3]\n- Input: graph = {1: [2, 3], 2: [1], 3: [1]}, start = 1\n  Expected Output: [1, 2, 3]"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_9():\n  assert function({1: [2, 3], 2: [1], 3: [1]}, 1) == [1, 2, 3]\n  assert function({1: [2, 3], 2: [4], 3: [], 4: []}, 1) == [1, 2, 4, 3]"
+                    "content": "Write a Python function to pass the following tests: def test_generic_9():\n  assert function({1: [2, 3], 2: [1], 3: [1]}, 1) == [1, 2, 3]\n  assert function({1: [2, 3], 2: [4], 3: [], 4: []}, 1) == [1, 2, 4, 3]"
                 }
             ],
             "id": "9",
@@ -255,11 +262,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "Test Cases:\n- Input: 5\n  Expected Output: 120\n- Input: 1\n  Expected Output: 1"
+                    "content": "Write a Python function to pass the following tests: Test Cases:\n- Input: 5\n  Expected Output: 120\n- Input: 1\n  Expected Output: 1"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_10():\n  assert function(5) == 120\n  assert function(1) == 1"
+                    "content": "Write a Python function to pass the following tests: def test_generic_10():\n  assert function(5) == 120\n  assert function(1) == 1"
                 }
             ],
             "id": "10",
@@ -276,17 +283,18 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Write a function called multiply_list that takes a list of numbers and returns the product of all the numbers. Include test cases for an empty list, a single number, and multiple numbers."
+                    "content": "Write a function called `multiply_list` that takes a list of numbers and returns the product of all the numbers. \n\nTest Cases:\n- Input: nums = []\n  Expected Output: 1\n- Input: nums = [2]\n  Expected Output: 2\n- Input: nums = [1, 2, 3]\n  Expected Output: 6"
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_empty():\n  nums = []\n  assert multiply_list(nums) == 1\n\ndef test_single():\n  nums = [2]\n  assert multiply_list(nums) == 2\n  \ndef test_multi():\n  nums = [1, 2, 3]\n  assert multiply_list(nums) == 6"
+                    "content": "Write a Python function to pass the following tests: def test_empty():\n  nums = []\n  assert multiply_list(nums) == 1\n\ndef test_single():\n  nums = [2]\n  assert multiply_list(nums) == 2\n  \ndef test_multi():\n  nums = [1, 2, 3]\n  assert multiply_list(nums) == 6"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_1():\n  input = []\n  assert function(input) == 1\n\ndef test_2():\n  input = [2]\n  assert function(input) == 2\n\ndef test_3():\n  input = [1, 2, 3]\n  assert function(input) == 6"
+                    "content": "Write a Python function to pass the following tests: def test_1():\n  input = []\n  assert function(input) == 1\n\ndef test_2():\n  input = [2]\n  assert function(input) == 2\n\ndef test_3():\n  input = [1, 2, 3]\n  assert function(input) == 6"
                 }
-            ]
+            ],
+            "id": "11"
         },
         {
             "category": "String",
@@ -300,15 +308,16 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Write a function called count_vowels that takes a string and returns the number of vowels. Include test cases for an empty string, a string with no vowels, and a string with multiple vowels."
+                    "content": "Write a function called `count_vowels` that takes a string and returns the number of vowels. \n\nTest Cases:\n- Input: text = ''\n  Expected Output: 0\n- Input: text = 'try'\n  Expected Output: 0\n- Input: text = 'apple'\n  Expected Output: 2"
+
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_empty():\n  text = ''\n  assert count_vowels(text) == 0\n\ndef test_no_vowels():\n  text = 'try'\n  assert count_vowels(text) == 0\n\ndef test_multi():\n  text = 'apple'\n  assert count_vowels(text) == 2"
+                    "content": "Write a Python function to pass the following tests: def test_empty():\n  text = ''\n  assert count_vowels(text) == 0\n\ndef test_no_vowels():\n  text = 'try'\n  assert count_vowels(text) == 0\n\ndef test_multi():\n  text = 'apple'\n  assert count_vowels(text) == 2"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_1():\n  input = ''\n  assert function(input) == 0\n\ndef test_2():\n  input = 'try'\n  assert function(input) == 0\n\ndef test_3():\n  input = 'apple'\n  assert function(input) == 2"
+                    "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == 0\n\ndef test_2():\n  input = 'try'\n  assert function(input) == 0\n\ndef test_3():\n  input = 'apple'\n  assert function(input) == 2"
                 }
             ]
         },
@@ -324,15 +333,15 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Write a function called is_palindrome that takes a string and returns True if it is a palindrome, False otherwise. Include test cases for an empty string, a non-palindrome string, and a palindrome string."
+                    "content": "Write a function called `is_palindrome` that takes a string and returns `True` if it is a palindrome, `False` otherwise. \n\nTest Cases:\n- Input: text = ''\n  Expected Output: True\n- Input: text = 'hello'\n  Expected Output: False\n- Input: text = 'racecar'\n  Expected Output: True"
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_empty():\n  text = ''\n  assert is_palindrome(text) == True\n\ndef test_not_palindrome():\n  text = 'hello'\n  assert is_palindrome(text) == False\n\ndef test_palindrome():\n  text = 'racecar'\n  assert is_palindrome(text) == True"
+                    "content": "Write a Python function to pass the following tests: def test_empty():\n  text = ''\n  assert is_palindrome(text) == True\n\ndef test_not_palindrome():\n  text = 'hello'\n  assert is_palindrome(text) == False\n\ndef test_palindrome():\n  text = 'racecar'\n  assert is_palindrome(text) == True"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_1():\n  input = ''\n  assert function(input) == True\n\ndef test_2():\n  input = 'hello'\n  assert function(input) == False\n\ndef test_3():\n  input = 'racecar'\n  assert function(input) == True"
+                    "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == True\n\ndef test_2():\n  input = 'hello'\n  assert function(input) == False\n\ndef test_3():\n  input = 'racecar'\n  assert function(input) == True"
                 }
             ]
         },
@@ -348,15 +357,16 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Write a function called longest_word that takes a sentence and returns the longest word. Include test cases for an empty sentence, a sentence with one word, and a sentence with multiple words."
+                    "content": "Write a function called `longest_word` that takes a sentence and returns the longest word. \n\nTest Cases:\n- Input: sentence = ''\n  Expected Output: ''\n- Input: sentence = 'hi'\n  Expected Output: 'hi'\n- Input: sentence = 'hello there my friend'\n  Expected Output: 'hello'",
+
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_empty():\n  sentence = ''\n  assert longest_word(sentence) == ''\n\ndef test_single():\n  sentence = 'hi'\n  assert longest_word(sentence) == 'hi'\n\ndef test_multi():\n  sentence = 'hello there my friend'\n  assert longest_word(sentence) == 'hello'"
+                    "content": "Write a Python function to pass the following tests: def test_empty():\n  sentence = ''\n  assert longest_word(sentence) == ''\n\ndef test_single():\n  sentence = 'hi'\n  assert longest_word(sentence) == 'hi'\n\ndef test_multi():\n  sentence = 'hello there my friend'\n  assert longest_word(sentence) == 'hello'"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2(): \n  input = 'hi'\n  assert function(input) == 'hi'\n\ndef test_3():\n  input = 'hello there my friend'\n  assert function(input) == 'hello'"
+                    "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2(): \n  input = 'hi'\n  assert function(input) == 'hi'\n\ndef test_3():\n  input = 'hello there my friend'\n  assert function(input) == 'hello'"
                 }
             ]
         },
@@ -372,15 +382,15 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Write a function called capitalize that takes a string and returns a copy with the first letter of each word capitalized. Include test cases for an empty string, a single word, and multiple words."
+                    "content": "Write a function called `capitalize` that takes a string and returns a copy with the first letter of each word capitalized. \n\nTest Cases:\n- Input: text = ''\n  Expected Output: ''\n- Input: text = 'hello'\n  Expected Output: 'Hello'\n- Input: text = 'hello world'\n  Expected Output: 'Hello World'"
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_empty():\n  text = ''\n  assert capitalize(text) == ''\n\ndef test_single():\n  text = 'hello'\n  assert capitalize(text) == 'Hello'\n\ndef test_multi():\n  text = 'hello world'\n  assert capitalize(text) == 'Hello World'"
+                    "content": "Write a Python function to pass the following tests: def test_empty():\n  text = ''\n  assert capitalize(text) == ''\n\ndef test_single():\n  text = 'hello'\n  assert capitalize(text) == 'Hello'\n\ndef test_multi():\n  text = 'hello world'\n  assert capitalize(text) == 'Hello World'"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'hello'\n  assert function(input) == 'Hello'\n\ndef test_3():\n  input = 'hello world'\n  assert function(input) == 'Hello World'"
+                    "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'hello'\n  assert function(input) == 'Hello'\n\ndef test_3():\n  input = 'hello world'\n  assert function(input) == 'Hello World'"
                 }
             ]
         },
@@ -396,15 +406,15 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Write a function called reverse_string that takes a string and returns it reversed. Include test cases for an empty string, a single character, and a multi-character string."
+                    "content": "Write a function called `reverse_string` that takes a string and returns it reversed. \n\nTest Cases:\n- Input: text = ''\n  Expected Output: ''\n- Input: text = 'a'\n  Expected Output: 'a'\n- Input: text = 'abc'\n  Expected Output: 'cba'"
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_empty():\n  text = ''\n  assert reverse_string(text) == ''\n\ndef test_single():\n  text = 'a'\n  assert reverse_string(text) == 'a'\n\ndef test_multi():\n  text = 'abc'\n  assert reverse_string(text) == 'cba'"
+                    "content": "Write a Python function to pass the following tests: def test_empty():\n  text = ''\n  assert reverse_string(text) == ''\n\ndef test_single():\n  text = 'a'\n  assert reverse_string(text) == 'a'\n\ndef test_multi():\n  text = 'abc'\n  assert reverse_string(text) == 'cba'"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'a'\n  assert function(input) == 'a'\n\ndef test_3():\n  input = 'abc'\n  assert function(input) == 'cba'"
+                    "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'a'\n  assert function(input) == 'a'\n\ndef test_3():\n  input = 'abc'\n  assert function(input) == 'cba'"
                 }
             ]
         },
@@ -420,15 +430,15 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Write a function called count_digits that takes an integer and returns the number of digits. Include test cases for 0, a single digit number, and a multi-digit number."
+                    "content": "Write a function called `count_digits` that takes an integer and returns the number of digits. \n\nTest Cases:\n- Input: num = 0\n  Expected Output: 1\n- Input: num = 5\n  Expected Output: 1\n- Input: num = 348\n  Expected Output: 3"
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_zero():\n  num = 0\n  assert count_digits(num) == 1\n   \ndef test_single():\n  num = 5\n  assert count_digits(num) == 1\n\ndef test_multi():\n  num = 348\n  assert count_digits(num) == 3"
+                    "content": "Write a Python function to pass the following tests: def test_zero():\n  num = 0\n  assert count_digits(num) == 1\n   \ndef test_single():\n  num = 5\n  assert count_digits(num) == 1\n\ndef test_multi():\n  num = 348\n  assert count_digits(num) == 3"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_1():\n  input = 0\n  assert function(input) == 1\n\ndef test_2():\n  input = 5\n  assert function(input) == 1\n\ndef test_3():\n  input = 348\n  assert function(input) == 3"
+                    "content": "Write a Python function to pass the following tests: def test_1():\n  input = 0\n  assert function(input) == 1\n\ndef test_2():\n  input = 5\n  assert function(input) == 1\n\ndef test_3():\n  input = 348\n  assert function(input) == 3"
                 }
             ]
         },
@@ -444,15 +454,15 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Write a function called factorial that takes a number and returns its factorial. Include test cases for 0, 1, and a larger number."
+                    "content": "Write a function called `factorial` that takes a number and returns its factorial. \n\nTest Cases:\n- Input: num = 0\n  Expected Output: 1\n- Input: num = 1\n  Expected Output: 1\n- Input: num = 5\n  Expected Output: 120"
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_zero():\n  num = 0\n  assert factorial(num) == 1\n\ndef test_single():\n  num = 1\n assert factorial(num) == 1\n\ndef test_multi():\n  num = 5\n  assert factorial(num) == 120"
+                    "content": "Write a Python function to pass the following tests: def test_zero():\n  num = 0\n  assert factorial(num) == 1\n\ndef test_single():\n  num = 1\n assert factorial(num) == 1\n\ndef test_multi():\n  num = 5\n  assert factorial(num) == 120"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_1():\n  input = 0\n  assert function(input) == 1\n\ndef test_2():\n  input = 1\n  assert function(input) == 1\n\ndef test_3():\n  input = 5\n  assert function(input) == 120"
+                    "content": "Write a Python function to pass the following tests: def test_1():\n  input = 0\n  assert function(input) == 1\n\ndef test_2():\n  input = 1\n  assert function(input) == 1\n\ndef test_3():\n  input = 5\n  assert function(input) == 120"
                 }
             ]
         },
@@ -468,15 +478,15 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Write a function called fibonacci that takes a number and returns the Fibonacci sequence up to that number. Include test cases for 0, 1, and a larger number."
+                    "content": "Write a function called `fibonacci` that takes a number and returns the Fibonacci sequence up to that number. Include test cases for 0, 1, and a larger number.\n\nTest Cases:\n- Input: num = 0\n  Expected Output: [0]\n- Input: num = 1\n  Expected Output: [0, 1]\n- Input: num = 6\n  Expected Output: [0, 1, 1, 2, 3, 5]"
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_zero():\n  num = 0\n  assert fibonacci(num) == [0]\n\ndef test_one():\n  num = 1\n  assert fibonacci(num) == [0, 1]\n   \ndef test_multi():\n  num = 6\n  assert fibonacci(num) == [0, 1, 1, 2, 3, 5]"
+                    "content": "Write a Python function to pass the following tests: def test_zero():\n  num = 0\n  assert fibonacci(num) == [0]\n\ndef test_one():\n  num = 1\n  assert fibonacci(num) == [0, 1]\n   \ndef test_multi():\n  num = 6\n  assert fibonacci(num) == [0, 1, 1, 2, 3, 5]"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_1():\n  input = 0\n  assert function(input) == [0]\n\ndef test_2():\n  input = 1\n  assert function(input) == [0, 1]\n\ndef test_3():\n  input = 6\n  assert function(input) == [0, 1, 1, 2, 3, 5]"
+                    "content": "Write a Python function to pass the following tests: def test_1():\n  input = 0\n  assert function(input) == [0]\n\ndef test_2():\n  input = 1\n  assert function(input) == [0, 1]\n\ndef test_3():\n  input = 6\n  assert function(input) == [0, 1, 1, 2, 3, 5]"
                 }
             ]
         },
@@ -492,15 +502,15 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Write a function called fizzbuzz that prints the numbers 1 to 100, but printing 'Fizz' for multiples of 3, 'Buzz' for multiples of 5, and 'FizzBuzz' for multiples of both 3 and 5. Include test cases."
+                    "content": "Write a function called `fizzbuzz` that prints the numbers 1 to 100, but printing 'Fizz' for multiples of 3, 'Buzz' for multiples of 5, and 'FizzBuzz' for multiples of both 3 and 5. Include test cases.\n\nTest Cases:\n- Input: num = 3\n  Expected Output: 'Fizz'\n- Input: num = 5\n  Expected Output: 'Buzz'\n- Input: num = 15\n  Expected Output: 'FizzBuzz'"
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_fizz():\n  num = 3\n  assert fizzbuzz(num) == 'Fizz'\n\ndef test_buzz():\n  num = 5\n  assert fizzbuzz(num) == 'Buzz'\n\ndef test_fizzbuzz():\n  num = 15\n  assert fizzbuzz(num) == 'FizzBuzz'"
+                    "content": "Write a Python function to pass the following tests: def test_fizz():\n  num = 3\n  assert fizzbuzz(num) == 'Fizz'\n\ndef test_buzz():\n  num = 5\n  assert fizzbuzz(num) == 'Buzz'\n\ndef test_fizzbuzz():\n  num = 15\n  assert fizzbuzz(num) == 'FizzBuzz'"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_1():\n  input = 3\n  assert function(input) == 'Fizz'\n\ndef test_2():\n  input = 5 \n  assert function(input) == 'Buzz'\n\ndef test_3():\n input = 15\n assert function(input) == 'FizzBuzz'"
+                    "content": "Write a Python function to pass the following tests: def test_1():\n  input = 3\n  assert function(input) == 'Fizz'\n\ndef test_2():\n  input = 5 \n  assert function(input) == 'Buzz'\n\ndef test_3():\n input = 15\n assert function(input) == 'FizzBuzz'"
                 }
             ]
         },
@@ -520,11 +530,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_find_first_non_repeating_char():\n  assert find_first_non_repeating_char('abca') == 'b'\n  assert find_first_non_repeating_char('ccbaab') == 'b'"
+                    "content": "Write a Python function to pass the following tests: def test_find_first_non_repeating_char():\n  assert find_first_non_repeating_char('abca') == 'b'\n  assert find_first_non_repeating_char('ccbaab') == 'b'"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_21():\n  assert function('abca') == 'b'\n  assert function('ccbaab') == 'b'"
+                    "content": "Write a Python function to pass the following tests: def test_generic_21():\n  assert function('abca') == 'b'\n  assert function('ccbaab') == 'b'"
                 }
             ]
         },
@@ -544,11 +554,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_find_longest_substring_without_repeating_characters():\n  assert find_longest_substring_without_repeating_characters('abcabcbb') == 'abc'\n  assert find_longest_substring_without_repeating_characters('bbbbb') == 'b'"
+                    "content": "Write a Python function to pass the following tests: def test_find_longest_substring_without_repeating_characters():\n  assert find_longest_substring_without_repeating_characters('abcabcbb') == 'abc'\n  assert find_longest_substring_without_repeating_characters('bbbbb') == 'b'"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_22():\n  assert function('abcabcbb') == 'abc'\n  assert function('bbbbb') == 'b'"
+                    "content": "Write a Python function to pass the following tests: def test_generic_22():\n  assert function('abcabcbb') == 'abc'\n  assert function('bbbbb') == 'b'"
                 }
             ]
         },
@@ -564,15 +574,15 @@
                 },
                 {
                     "type": "prompt_with_tests",
-                    "content": "Implement a function that finds the longest substring with k distinct characters in a given string.\n\nTest Cases:\n- Input: 'abcabcbb', k = 2\n  Expected Output: 'abc'\n- Input: 'bbbbb', k = 3\n  Expected Output: ''"
+                    "content": "Implement a function that finds the longest substring with k distinct characters in a given string.\n\nTest Cases:\n- Input: 'abcabcbb', k = 3\n  Expected Output: 'abc'\n- Input: 'bbbbb', k = 3\n  Expected Output: ''"
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_longest_substring_with_k_distinct_characters():\n  assert longest_substring_with_k_distinct_characters('abcabcbb', 2) == 'abc'\n  assert longest_substring_with_k_distinct_characters('bbbbb', 3) == ''"
+                    "content":"Write a Python function to pass the following tests: def test_longest_substring_with_k_distinct_characters():\n  assert longest_substring_with_k_distinct_characters('abcabcbb', 3) == 'abc'\n  assert longest_substring_with_k_distinct_characters('bbbbb', 3) == ''"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_23():\n  assert function('abcabcbb', 2) == 'abc'\n  assert function('bbbbb', 3) == ''"
+                    "content": "Write a Python function to pass the following tests: def test_generic_23():\n  assert function('abcabcbb', 3) == 'abc'\n  assert function('bbbbb', 3) == ''"
                 }
             ]
         },
@@ -592,11 +602,11 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_longest_palindromic_substring():\n  assert longest_palindromic_substring('babad') == 'bab'\n  assert longest_palindromic_substring('cbbd') == 'bb'"
+                    "content": "Write a Python function to pass the following tests: def test_longest_palindromic_substring():\n  assert longest_palindromic_substring('babad') == 'bab'\n  assert longest_palindromic_substring('cbbd') == 'bb'"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_24():\n  assert function('babad') == 'bab'\n  assert function('cbbd') == 'bb'"
+                    "content": "Write a Python function to pass the following tests: def test_generic_24():\n  assert function('babad') == 'bab'\n  assert function('cbbd') == 'bb'"
                 }
             ]
         },
@@ -616,19 +626,13 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content": "def test_longest_common_substring():\n  assert longest_common_substring('abcde', 'bcde') == 'bcde'\n  assert longest_common_substring('abcdef', 'abef') == 'abe'"
+                    "content": "Write a Python function to pass the following tests: def test_longest_common_substring():\n  assert longest_common_substring('abcde', 'bcde') == 'bcde'\n  assert longest_common_substring('abcdef', 'abef') == 'abe'"
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "def test_generic_25():\n  assert function('abcde', 'bcde') == 'bcde'\n  assert function('abcdef', 'abef') == 'abe'"
+                    "content": "Write a Python function to pass the following tests: def test_generic_25():\n  assert function('abcde', 'bcde') == 'bcde'\n  assert function('abcdef', 'abef') == 'abe'"
                 }
             ]
         }
-        
-        
-        
-        
-
-        
     ]
 }
