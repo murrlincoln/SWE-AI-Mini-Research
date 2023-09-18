@@ -242,7 +242,7 @@ class TestCodingProblems(unittest.TestCase):
 
     # For longest_substring_with_k_distinct_characters
     def test_longest_substring_with_k_distinct_characters(self):
-        self.assertEqual(main.longest_substring_with_k_distinct_characters('abcabcbb', 2), 'abc')
+        self.assertEqual(main.longest_substring_with_k_distinct_characters('abcabcbb', 3), 'abc')
         self.assertEqual(main.longest_substring_with_k_distinct_characters('bbbbb', 3), '')
         self.assertEqual(main.longest_substring_with_k_distinct_characters('pwwkew', 3), 'wke')
         self.assertEqual(main.longest_substring_with_k_distinct_characters('', 2), '')
