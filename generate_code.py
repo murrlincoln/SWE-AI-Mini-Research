@@ -1,31 +1,51 @@
-import json
-import openai
+import os
+import csv
+import sys
+from contexts import ModelContext, ProblemContext, RunContext
+from querier import HumanQuerier, OpenAIQuerier
+    
+def handle_problem(problemContext, querier, solutions_per_problem):
+    for runContext in problemContext.GetRunContexts(solutions_per_problem):
+        prompts = problemContext.prompts()
+        # print(prompts)
+        
+        for type, content in prompts.items():
+            outputPath = os.path.join(runContext.generatedPath(), type + ".py")
+            if not os.path.exists(outputPath):
+                print(f"Prompting for problem {problemContext.problemName()} with prompt type {type}")
+            
+                response = querier.performQuery(content)
+                print('-' * 60)
+                print(response)
+                print('-' * 60)
+                
+                with open(outputPath, 'w') as f:
+                    f.write(response)
+            
 
-# Initialize the OpenAI API client
-openai.api_key = "your-openai-api-key-here"
-
-# Read the JSON file containing the problems
-with open('all_problems.json', 'r') as f:
-    problems = json.load(f)
-
-# Loop through each problem and each type of prompt
-for problem in problems:
-    problem_id = problem['problem_id']
-    for prompt in problem['prompts']:
-        prompt_type = prompt['type']
-        prompt_content = 'Generate code adhereing to the following prompt: ' +  prompt['content']
-
-        # Send the prompt to the OpenAI API
-        response = openai.Completion.create(
-            engine="text-davinci-002",
-            prompt=prompt_content,
-            max_tokens=100
-        )
-
-        # Extract and print the generated code
-        generated_code = response.choices[0].text.strip()
-        print(f"Generated code for {problem_id}, prompt type {prompt_type}:")
-        print(generated_code)
-        print('-' * 60)
-
-        # Save or process the generated code as you wish
+if __name__ == "__main__":
+    # Check if the user has provided a command-line argument
+    if len(sys.argv) < 5:
+        print("Please provide correct arguments.")
+        sys.exit(1)
+        
+    folder_path = sys.argv[1]
+    model_name = sys.argv[2]
+    querier_type = sys.argv[3]
+    solutions_per_problem = int(sys.argv[4])
+    
+    if querier_type == "human":
+        querier = HumanQuerier()
+    elif querier_type == "openai":
+        querier = OpenAIQuerier(model_name)
+    else:
+        print(f"Querier type {querier_type} unknown.")
+        sys.exit(1)
+    
+    # Check if the given folder path exists
+    if os.path.exists(folder_path):
+        modelContext = ModelContext(model_name, folder_path)        
+        for problemContext in modelContext.GetProblemContexts():
+            handle_problem(problemContext, querier, solutions_per_problem)
+    else:
+        print("The provided folder path does not exist.")
