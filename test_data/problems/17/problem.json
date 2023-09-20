@@ -1,0 +1,22 @@
+{
+    "category": "Math",
+    "problem_id": "count_digits",
+    "prompts": [
+        {
+            "content": "Count digits in number",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Write a function called `count_digits` that takes an integer and returns the number of digits. \n\nTest Cases:\n- Input: num = 0\n  Expected Output: 1\n- Input: num = 5\n  Expected Output: 1\n- Input: num = 348\n  Expected Output: 3",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_zero():\n  num = 0\n  assert count_digits(num) == 1\n   \ndef test_single():\n  num = 5\n  assert count_digits(num) == 1\n\ndef test_multi():\n  num = 348\n  assert count_digits(num) == 3",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_1():\n  input = 0\n  assert function(input) == 1\n\ndef test_2():\n  input = 5\n  assert function(input) == 1\n\ndef test_3():\n  input = 348\n  assert function(input) == 3",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "category": "String",
+    "problem_id": "longest_word",
+    "prompts": [
+        {
+            "content": "Find longest word in sentence",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Write a function called `longest_word` that takes a sentence and returns the longest word. \n\nTest Cases:\n- Input: sentence = ''\n  Expected Output: ''\n- Input: sentence = 'hi'\n  Expected Output: 'hi'\n- Input: sentence = 'hello there my friend'\n  Expected Output: 'hello'",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_empty():\n  sentence = ''\n  assert longest_word(sentence) == ''\n\ndef test_single():\n  sentence = 'hi'\n  assert longest_word(sentence) == 'hi'\n\ndef test_multi():\n  sentence = 'hello there my friend'\n  assert longest_word(sentence) == 'hello'",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2(): \n  input = 'hi'\n  assert function(input) == 'hi'\n\ndef test_3():\n  input = 'hello there my friend'\n  assert function(input) == 'hello'",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

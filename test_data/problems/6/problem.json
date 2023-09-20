@@ -1,0 +1,22 @@
+{
+    "description": "This problem tests the ability to work with string manipulation and regular expressions. The task is to implement a function that validates an email address according to certain rules.",
+    "problem_id": "validate_email_address",
+    "prompts": [
+        {
+            "content": "Implement a function that validates an email address according to certain rules.",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Implement a function that validates an email address according to certain rules.\n\nTest Cases:\n- Input: 'test@example.com'\n  Expected Output: True\n- Input: 'test.example.com'\n  Expected Output: False",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_validate_email():\n  assert validate_email('test@example.com') == True\n  assert validate_email('test.example.com') == False",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_generic_6():\n  assert function('test@example.com') == True\n  assert function('test.example.com') == False",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

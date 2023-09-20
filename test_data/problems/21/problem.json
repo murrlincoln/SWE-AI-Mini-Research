@@ -1,0 +1,22 @@
+{
+    "description": "This problem tests the ability to work with hash tables. The task is to implement a function that finds the first non-repeating character in a given string.",
+    "problem_id": "find_first_non_repeating_char",
+    "prompts": [
+        {
+            "content": "Implement a function that finds the first non-repeating character in a given string.",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Implement a function that finds the first non-repeating character in a given string.\n\nTest Cases:\n- Input: 'abca'\n  Expected Output: 'b'\n- Input: 'ccbaab'\n  Expected Output: 'b'",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_find_first_non_repeating_char():\n  assert find_first_non_repeating_char('abca') == 'b'\n  assert find_first_non_repeating_char('ccbaab') == 'b'",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_generic_21():\n  assert function('abca') == 'b'\n  assert function('ccbaab') == 'b'",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

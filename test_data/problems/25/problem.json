@@ -1,0 +1,22 @@
+{
+    "description": "This problem tests the ability to work with dynamic programming. The task is to implement a function that finds the longest common substring between two strings.",
+    "problem_id": "longest_common_substring",
+    "prompts": [
+        {
+            "content": "Implement a function that finds the longest common substring between two strings.",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Implement a function that finds the longest common substring between two strings.\n\nTest Cases:\n- Input: 'abcde', 'bcde'\n  Expected Output: 'bcde'\n- Input: 'abcdef', 'abef'\n  Expected Output: 'abe'",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_longest_common_substring():\n  assert longest_common_substring('abcde', 'bcde') == 'bcde'\n  assert longest_common_substring('abcdef', 'abef') == 'abe'",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_generic_25():\n  assert function('abcde', 'bcde') == 'bcde'\n  assert function('abcdef', 'abef') == 'abe'",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

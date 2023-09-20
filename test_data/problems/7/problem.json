@@ -1,0 +1,22 @@
+{
+    "description": "This problem tests the ability to work with bitwise operations. The task is to implement a function that calculates the bitwise AND of all numbers in a range from m to n.",
+    "problem_id": "range_bitwise_and",
+    "prompts": [
+        {
+            "content": "Implement a function that calculates the bitwise AND of all numbers in a range from m to n.",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Implement a function that calculates the bitwise AND of all numbers in a range from m to n.\n\nTest Cases:\n- Input: m = 5, n = 7\n  Expected Output: 4\n- Input: m = 0, n = 1\n  Expected Output: 0",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_range_bitwise_and():\n  assert range_bitwise_and(5, 7) == 4\n  assert range_bitwise_and(0, 1) == 0",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_generic_7():\n  assert function(5, 7) == 4\n  assert function(0, 1) == 0",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "category": "String",
+    "problem_id": "capitalize",
+    "prompts": [
+        {
+            "content": "Capitalize words in string",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Write a function called `capitalize` that takes a string and returns a copy with the first letter of each word capitalized. \n\nTest Cases:\n- Input: text = ''\n  Expected Output: ''\n- Input: text = 'hello'\n  Expected Output: 'Hello'\n- Input: text = 'hello world'\n  Expected Output: 'Hello World'",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_empty():\n  text = ''\n  assert capitalize(text) == ''\n\ndef test_single():\n  text = 'hello'\n  assert capitalize(text) == 'Hello'\n\ndef test_multi():\n  text = 'hello world'\n  assert capitalize(text) == 'Hello World'",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'hello'\n  assert function(input) == 'Hello'\n\ndef test_3():\n  input = 'hello world'\n  assert function(input) == 'Hello World'",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

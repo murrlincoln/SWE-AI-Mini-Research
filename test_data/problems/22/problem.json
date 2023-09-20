@@ -1,0 +1,22 @@
+{
+    "description": "This problem tests the ability to work with hash sets. The task is to implement a function that finds the longest substring without repeating characters in a given string.",
+    "problem_id": "find_longest_substring_without_repeating_characters",
+    "prompts": [
+        {
+            "content": "Implement a function that finds the longest substring without repeating characters in a given string.",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Implement a function that finds the longest substring without repeating characters in a given string.\n\nTest Cases:\n- Input: 'abcabcbb'\n  Expected Output: 'abc'\n- Input: 'bbbbb'\n  Expected Output: 'b'",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_find_longest_substring_without_repeating_characters():\n  assert find_longest_substring_without_repeating_characters('abcabcbb') == 'abc'\n  assert find_longest_substring_without_repeating_characters('bbbbb') == 'b'",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_generic_22():\n  assert function('abcabcbb') == 'abc'\n  assert function('bbbbb') == 'b'",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

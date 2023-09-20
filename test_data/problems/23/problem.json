@@ -1,0 +1,22 @@
+{
+    "description": "This problem tests the ability to work with hash maps. The task is to implement a function that finds the longest substring with k distinct characters in a given string.",
+    "problem_id": "longest_substring_with_k_distinct_characters",
+    "prompts": [
+        {
+            "content": "Implement a function that finds the longest substring with k distinct characters in a given string.",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Implement a function that finds the longest substring with k distinct characters in a given string.\n\nTest Cases:\n- Input: 'abcabcbb', k = 3\n  Expected Output: 'abc'\n- Input: 'bbbbb', k = 3\n  Expected Output: ''",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_longest_substring_with_k_distinct_characters():\n  assert longest_substring_with_k_distinct_characters('abcabcbb', 3) == 'abc'\n  assert longest_substring_with_k_distinct_characters('bbbbb', 3) == ''",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_generic_23():\n  assert function('abcabcbb', 3) == 'abc'\n  assert function('bbbbb', 3) == ''",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

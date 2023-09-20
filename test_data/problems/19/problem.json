@@ -1,0 +1,22 @@
+{
+    "category": "Math",
+    "problem_id": "fibonacci",
+    "prompts": [
+        {
+            "content": "Generate Fibonacci sequence",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Write a function called `fibonacci` that takes a number and returns the Fibonacci sequence up to that number. Include test cases for 0, 1, and a larger number.\n\nTest Cases:\n- Input: num = 0\n  Expected Output: [0]\n- Input: num = 1\n  Expected Output: [0, 1]\n- Input: num = 6\n  Expected Output: [0, 1, 1, 2, 3, 5]",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_zero():\n  num = 0\n  assert fibonacci(num) == [0]\n\ndef test_one():\n  num = 1\n  assert fibonacci(num) == [0, 1]\n   \ndef test_multi():\n  num = 6\n  assert fibonacci(num) == [0, 1, 1, 2, 3, 5]",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_1():\n  input = 0\n  assert function(input) == [0]\n\ndef test_2():\n  input = 1\n  assert function(input) == [0, 1]\n\ndef test_3():\n  input = 6\n  assert function(input) == [0, 1, 1, 2, 3, 5]",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

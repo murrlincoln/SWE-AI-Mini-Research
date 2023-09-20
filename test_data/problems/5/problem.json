@@ -1,0 +1,22 @@
+{
+    "description": "This problem tests the ability to work with tree data structures. The task is to implement a function that checks if a binary tree is balanced.",
+    "problem_id": "check_if_binary_tree_is_balanced",
+    "prompts": [
+        {
+            "content": "Implement a function that checks if a binary tree is balanced.",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Implement a function that checks if a binary tree is balanced.\n\nTest Cases:\n- Input: Balanced Tree\n  Expected Output: True\n- Input: Unbalanced Tree\n  Expected Output: False",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_is_balanced():\n  assert is_balanced('Balanced Tree') == True\n  assert is_balanced('Unbalanced Tree') == False",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_generic_5():\n  assert function('Balanced Tree') == True\n  assert function('Unbalanced Tree') == False",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

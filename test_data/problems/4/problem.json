@@ -1,0 +1,22 @@
+{
+    "description": "This problem tests the ability to work with basic algorithms. The task is to find the maximum product of any two integers in a given list.",
+    "problem_id": "max_product_of_two_integers",
+    "prompts": [
+        {
+            "content": "Implement a function that finds the maximum product of any two integers in a given list.",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Implement a function that finds the maximum product of any two integers in a given list.\n\nTest Cases:\n- Input: [1, 2, 3, 4]\n  Expected Output: 12\n- Input: [-1, -2, -3, -4]\n  Expected Output: 12",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_max_product():\n  assert max_product([1, 2, 3, 4]) == 12\n  assert max_product([-1, -2, -3, -4]) == 12",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_generic_4():\n  assert function([1, 2, 3, 4]) == 12\n  assert function([-1, -2, -3, -4]) == 12",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

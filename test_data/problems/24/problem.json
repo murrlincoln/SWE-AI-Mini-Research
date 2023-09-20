@@ -1,0 +1,22 @@
+{
+    "description": "This problem tests the ability to work with dynamic programming. The task is to implement a function that finds the longest palindromic substring in a given string.",
+    "problem_id": "longest_palindromic_substring",
+    "prompts": [
+        {
+            "content": "Implement a function that finds the longest palindromic substring in a given string.",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Implement a function that finds the longest palindromic substring in a given string.\n\nTest Cases:\n- Input: 'babad'\n  Expected Output: 'bab'\n- Input: 'cbbd'\n  Expected Output: 'bb'",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_longest_palindromic_substring():\n  assert longest_palindromic_substring('babad') == 'bab'\n  assert longest_palindromic_substring('cbbd') == 'bb'",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_generic_24():\n  assert function('babad') == 'bab'\n  assert function('cbbd') == 'bb'",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

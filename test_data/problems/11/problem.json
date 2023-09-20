@@ -1,0 +1,22 @@
+{
+    "category": "Math",
+    "problem_id": "multiply_list",
+    "prompts": [
+        {
+            "content": "Write a function to multiply numbers in a list",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Write a function called `multiply_list` that takes a list of numbers and returns the product of all the numbers. \n\nTest Cases:\n- Input: nums = []\n  Expected Output: 1\n- Input: nums = [2]\n  Expected Output: 2\n- Input: nums = [1, 2, 3]\n  Expected Output: 6",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_empty():\n  nums = []\n  assert multiply_list(nums) == 1\n\ndef test_single():\n  nums = [2]\n  assert multiply_list(nums) == 2\n  \ndef test_multi():\n  nums = [1, 2, 3]\n  assert multiply_list(nums) == 6",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_1():\n  input = []\n  assert function(input) == 1\n\ndef test_2():\n  input = [2]\n  assert function(input) == 2\n\ndef test_3():\n  input = [1, 2, 3]\n  assert function(input) == 6",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the factorial of a given number using recursion.",
+    "problem_id": "factorial_recursive_2",
+    "prompts": [
+        {
+            "content": "Implement a function that calculates the factorial of a given number using recursion.",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Implement a function that calculates the factorial of a given number using recursion.\n\nTest Cases:\n- Input: 5\n  Expected Output: 120\n- Input: 1\n  Expected Output: 1",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: Test Cases:\n- Input: 5\n  Expected Output: 120\n- Input: 1\n  Expected Output: 1",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_generic_10():\n  assert function(5) == 120\n  assert function(1) == 1",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

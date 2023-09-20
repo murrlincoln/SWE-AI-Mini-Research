@@ -1,0 +1,22 @@
+{
+    "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the nth Fibonacci number using recursion.",
+    "problem_id": "fibonacci_recursive",
+    "prompts": [
+        {
+            "content": "Implement a function that calculates the nth Fibonacci number using recursion.",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Implement a function that calculates the nth Fibonacci number using recursion.\n\nTest Cases:\n- Input: 0\n  Expected Output: 0\n- Input: 1\n  Expected Output: 1 \n- Input: 6\n Expected Output: 8",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_fibonacci():\n  assert fibonacci(0) == 0\n  assert fibonacci(1) == 1 \n assert fibonacci(6) = 8",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_generic_3():\n  assert function(0) == 0\n  assert function(1) == 1\n assert function(6) == 8",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

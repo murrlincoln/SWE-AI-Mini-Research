@@ -1,0 +1,22 @@
+{
+    "category": "Logic",
+    "problem_id": "fizzbuzz",
+    "prompts": [
+        {
+            "content": "FizzBuzz",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Write a function called `fizzbuzz` that prints the numbers 1 to 100, but printing 'Fizz' for multiples of 3, 'Buzz' for multiples of 5, and 'FizzBuzz' for multiples of both 3 and 5. Include test cases.\n\nTest Cases:\n- Input: num = 3\n  Expected Output: 'Fizz'\n- Input: num = 5\n  Expected Output: 'Buzz'\n- Input: num = 15\n  Expected Output: 'FizzBuzz'",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_fizz():\n  num = 3\n  assert fizzbuzz(num) == 'Fizz'\n\ndef test_buzz():\n  num = 5\n  assert fizzbuzz(num) == 'Buzz'\n\ndef test_fizzbuzz():\n  num = 15\n  assert fizzbuzz(num) == 'FizzBuzz'",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_1():\n  input = 3\n  assert function(input) == 'Fizz'\n\ndef test_2():\n  input = 5 \n  assert function(input) == 'Buzz'\n\ndef test_3():\n input = 15\n assert function(input) == 'FizzBuzz'",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

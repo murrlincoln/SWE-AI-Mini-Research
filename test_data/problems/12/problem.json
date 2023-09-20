@@ -1,0 +1,22 @@
+{
+    "category": "String",
+    "problem_id": "count_vowels",
+    "prompts": [
+        {
+            "content": "Count vowels in a string",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Write a function called `count_vowels` that takes a string and returns the number of vowels. \n\nTest Cases:\n- Input: text = ''\n  Expected Output: 0\n- Input: text = 'try'\n  Expected Output: 0\n- Input: text = 'apple'\n  Expected Output: 2",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_empty():\n  text = ''\n  assert count_vowels(text) == 0\n\ndef test_no_vowels():\n  text = 'try'\n  assert count_vowels(text) == 0\n\ndef test_multi():\n  text = 'apple'\n  assert count_vowels(text) == 2",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == 0\n\ndef test_2():\n  input = 'try'\n  assert function(input) == 0\n\ndef test_3():\n  input = 'apple'\n  assert function(input) == 2",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

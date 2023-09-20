@@ -1,0 +1,22 @@
+{
+    "category": "String",
+    "problem_id": "reverse_string",
+    "prompts": [
+        {
+            "content": "Reverse a string",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Write a function called `reverse_string` that takes a string and returns it reversed. \n\nTest Cases:\n- Input: text = ''\n  Expected Output: ''\n- Input: text = 'a'\n  Expected Output: 'a'\n- Input: text = 'abc'\n  Expected Output: 'cba'",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_empty():\n  text = ''\n  assert reverse_string(text) == ''\n\ndef test_single():\n  text = 'a'\n  assert reverse_string(text) == 'a'\n\ndef test_multi():\n  text = 'abc'\n  assert reverse_string(text) == 'cba'",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'a'\n  assert function(input) == 'a'\n\ndef test_3():\n  input = 'abc'\n  assert function(input) == 'cba'",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}

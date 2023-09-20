@@ -1,0 +1,22 @@
+{
+    "category": "String",
+    "problem_id": "is_palindrome",
+    "prompts": [
+        {
+            "content": "Check if a string is a palindrome",
+            "type": "prompt_only"
+        },
+        {
+            "content": "Write a function called `is_palindrome` that takes a string and returns `True` if it is a palindrome, `False` otherwise. \n\nTest Cases:\n- Input: text = ''\n  Expected Output: True\n- Input: text = 'hello'\n  Expected Output: False\n- Input: text = 'racecar'\n  Expected Output: True",
+            "type": "prompt_with_tests"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_empty():\n  text = ''\n  assert is_palindrome(text) == True\n\ndef test_not_palindrome():\n  text = 'hello'\n  assert is_palindrome(text) == False\n\ndef test_palindrome():\n  text = 'racecar'\n  assert is_palindrome(text) == True",
+            "type": "prompt_tests_only"
+        },
+        {
+            "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == True\n\ndef test_2():\n  input = 'hello'\n  assert function(input) == False\n\ndef test_3():\n  input = 'racecar'\n  assert function(input) == True",
+            "type": "prompt_generic_tests"
+        }
+    ]
+}
