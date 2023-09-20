@@ -36,7 +36,7 @@ class OpenAIQuerier(Querier):
 		pass
 		
 	def performQuery(self, prompt):
-		prompt_content = f"Generate Python code adhering to the following prompt: {prompt}"
+		prompt_content = f"Generate a Python function adhering to the following prompt: {prompt}"
 		print(prompt_content)
 		# Send the prompt to the OpenAI API
 		# This assumes that you have the OPENAI_API_KEY environment variable set
