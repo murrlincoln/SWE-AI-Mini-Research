@@ -1,6 +1,6 @@
 {
     "description": "This problem tests the ability to work with basic algorithms. The task is to find the maximum product of any two integers in a given list.",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "max_product",
         "parameters": [
             {
@@ -31,6 +31,20 @@
         {
             "content": "Write a Python function to pass the following tests: def test_generic_4():\n  assert function([1, 2, 3, 4]) == 12\n  assert function([-1, -2, -3, -4]) == 12",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "12",
+            "parameters": {
+                "nums": "[1,2,3,4]"
+            }
+        },
+        {
+            "expected_output": "12",
+            "parameters": {
+                "nums": "[-1,-2,-3,-4]"
+            }
         }
     ]
 }

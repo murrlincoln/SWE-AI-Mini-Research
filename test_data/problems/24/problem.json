@@ -32,5 +32,19 @@
             "content": "Write a Python function to pass the following tests: def test_generic_24():\n  assert function('babad') == 'bab'\n  assert function('cbbd') == 'bb'",
             "type": "prompt_generic_tests"
         }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "'bab'",
+            "parameters": {
+                "text": "'babad'"
+            }
+        },
+        {
+            "expected_output": "'bb'",
+            "parameters": {
+                "text": "'cbbd'"
+            }
+        }
     ]
 }

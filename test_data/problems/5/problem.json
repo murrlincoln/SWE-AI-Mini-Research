@@ -1,6 +1,6 @@
 {
     "description": "This problem tests the ability to work with tree data structures. The task is to implement a function that checks if a binary tree is balanced.",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "is_balanced",
         "parameters": [
             {
@@ -32,6 +32,20 @@
         {
             "content": "Write a Python function to pass the following tests: def test_generic_5():\n  assert function('Balanced Tree') == True\n  assert function('Unbalanced Tree') == False",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "True",
+            "parameters": {
+                "tree": "Balanced Tree"
+            }
+        },
+        {
+            "expected_output": "False",
+            "parameters": {
+                "tree": "Unbalanced Tree"
+            }
         }
     ]
 }

@@ -1,6 +1,6 @@
 {
     "category": "Math",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "count_digits",
         "parameters": [
             {
@@ -31,6 +31,26 @@
         {
             "content": "Write a Python function to pass the following tests: def test_1():\n  input = 0\n  assert function(input) == 1\n\ndef test_2():\n  input = 5\n  assert function(input) == 1\n\ndef test_3():\n  input = 348\n  assert function(input) == 3",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "1",
+            "parameters": {
+                "num": "num = 0"
+            }
+        },
+        {
+            "expected_output": "1",
+            "parameters": {
+                "num": "num = 5"
+            }
+        },
+        {
+            "expected_output": "3",
+            "parameters": {
+                "num": "num = 348"
+            }
         }
     ]
 }

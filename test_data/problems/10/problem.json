@@ -1,6 +1,6 @@
 {
     "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the factorial of a given number using recursion.",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "factorial_recursive_2",
         "parameters": [
             {
@@ -31,6 +31,20 @@
         {
             "content": "Write a Python function to pass the following tests: def test_generic_10():\n  assert function(5) == 120\n  assert function(1) == 1",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "120",
+            "parameters": {
+                "n": "5"
+            }
+        },
+        {
+            "expected_output": "1",
+            "parameters": {
+                "n": "1"
+            }
         }
     ]
 }

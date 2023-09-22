@@ -32,5 +32,25 @@
             "content": "Write a Python function to pass the following tests: def test_1():\n  input = 3\n  assert function(input) == 'Fizz'\n\ndef test_2():\n  input = 5 \n  assert function(input) == 'Buzz'\n\ndef test_3():\n input = 15\n assert function(input) == 'FizzBuzz'",
             "type": "prompt_generic_tests"
         }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "'Fizz'",
+            "parameters": {
+                "num": "num = 3"
+            }
+        },
+        {
+            "expected_output": "'Buzz'",
+            "parameters": {
+                "num": "num = 5"
+            }
+        },
+        {
+            "expected_output": "'FizzBuzz'",
+            "parameters": {
+                "num": "num = 15"
+            }
+        }
     ]
 }

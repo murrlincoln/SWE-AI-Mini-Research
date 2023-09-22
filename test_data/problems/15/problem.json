@@ -1,6 +1,6 @@
 {
     "category": "String",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "capitalize",
         "parameters": [
             {
@@ -31,6 +31,26 @@
         {
             "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'hello'\n  assert function(input) == 'Hello'\n\ndef test_3():\n  input = 'hello world'\n  assert function(input) == 'Hello World'",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "''",
+            "parameters": {
+                "text": "text = ''"
+            }
+        },
+        {
+            "expected_output": "'Hello'",
+            "parameters": {
+                "text": "text = 'hello'"
+            }
+        },
+        {
+            "expected_output": "'Hello World'",
+            "parameters": {
+                "text": "text = 'hello world'"
+            }
         }
     ]
 }

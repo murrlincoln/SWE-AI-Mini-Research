@@ -1,6 +1,6 @@
 {
     "description": "This problem tests the ability to work with arrays and sorting algorithms. The task is to implement a function that takes an array of integers and sorts the even numbers in ascending order, while leaving the odd numbers in their original positions.",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "sort_even_numbers",
         "parameters": [
             {
@@ -31,6 +31,20 @@
         {
             "content": "Write a Python function to pass the following tests: def test_generic_0():\n  assert function([5, 3, 2, 8, 1, 4]) == [5, 3, 2, 4, 1, 8]\n  assert function([0, 1, 2, 3, 4, 5]) == [0, 1, 2, 3, 4, 5]",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "[5, 3, 2, 4, 1, 8]",
+            "parameters": {
+                "arr": "[5,3,2,8,1,4]"
+            }
+        },
+        {
+            "expected_output": "[0, 1, 2, 3, 4, 5]",
+            "parameters": {
+                "arr": "[0,1,2,3,4,5]"
+            }
         }
     ]
 }

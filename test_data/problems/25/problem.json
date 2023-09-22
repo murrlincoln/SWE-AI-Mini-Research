@@ -36,5 +36,21 @@
             "content": "Write a Python function to pass the following tests: def test_generic_25():\n  assert function('abcde', 'bcde') == 'bcde'\n  assert function('abcdef', 'abef') == 'abe'",
             "type": "prompt_generic_tests"
         }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "'bcde'",
+            "parameters": {
+                "text1": "'abcde'",
+                "text2": "'bcde'"
+            }
+        },
+        {
+            "expected_output": "'abe'",
+            "parameters": {
+                "text1": "'abcdef'",
+                "text2": "'abef'"
+            }
+        }
     ]
 }

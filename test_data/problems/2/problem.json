@@ -1,6 +1,6 @@
 {
     "description": "This problem tests the ability to manipulate data structures, specifically linked lists. The task is to implement a function that reverses a singly linked list.",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "reverse_linked_list",
         "parameters": [
             {
@@ -31,6 +31,20 @@
         {
             "content": "Write a Python function to pass the following tests: def test_generic_2():\n  assert function([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert function([1]) == [1]",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "4 -> 3 -> 2 -> 1",
+            "parameters": {
+                "ll": "1 -> 2 -> 3 -> 4"
+            }
+        },
+        {
+            "expected_output": "1",
+            "parameters": {
+                "ll": "1"
+            }
         }
     ]
 }

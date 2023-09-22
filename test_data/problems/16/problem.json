@@ -1,6 +1,6 @@
 {
     "category": "String",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "reverse_string",
         "parameters": [
             {
@@ -31,6 +31,26 @@
         {
             "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'a'\n  assert function(input) == 'a'\n\ndef test_3():\n  input = 'abc'\n  assert function(input) == 'cba'",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "''",
+            "parameters": {
+                "text": "text = ''"
+            }
+        },
+        {
+            "expected_output": "'a'",
+            "parameters": {
+                "text": "text = 'a'"
+            }
+        },
+        {
+            "expected_output": "'cba'",
+            "parameters": {
+                "text": "text = 'abc'"
+            }
         }
     ]
 }

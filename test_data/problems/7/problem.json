@@ -1,6 +1,6 @@
 {
     "description": "This problem tests the ability to work with bitwise operations. The task is to implement a function that calculates the bitwise AND of all numbers in a range from m to n.",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "range_bitwise_and",
         "parameters": [
             {
@@ -35,6 +35,22 @@
         {
             "content": "Write a Python function to pass the following tests: def test_generic_7():\n  assert function(5, 7) == 4\n  assert function(0, 1) == 0",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "4",
+            "parameters": {
+                "m": "m = 5",
+                "n": "n = 7"
+            }
+        },
+        {
+            "expected_output": "0",
+            "parameters": {
+                "m": "m = 0",
+                "n": "n = 1"
+            }
         }
     ]
 }

@@ -1,6 +1,36 @@
 import os
 import json
 
+class FunctionSignature:
+	def __init__(self, data):
+		self.function_name = data["function_name"]
+		self.parameters = [Parameter(p) for p in data["parameters"]]
+		self.return_values = [ReturnValue(r) for r in data["return_values"]]
+
+	def __str__(self):
+		params_str = ", ".join([str(p) for p in self.parameters])
+		return_values_str = ", ".join([str(r) for r in self.return_values])
+		return f"{self.function_name}({params_str}) -> {return_values_str}"
+	
+	def get_parameter_values(self):
+		"""Returns a list of parameter values."""
+		return [param.name for param in self.parameters]
+
+class Parameter:
+	def __init__(self, data):
+		self.name = data["name"]
+		self.type = data["type"]
+
+	def __str__(self):
+		return f"{self.name}: {self.type}"
+
+class ReturnValue:
+	def __init__(self, data):
+		self.type = data["type"]
+
+	def __str__(self):
+		return self.type
+
 class ModelContext:
 	def __init__(self, model, rootDirectory):
 		self.__model = model
@@ -98,6 +128,10 @@ class ProblemContext:
 		
 	def problemName(self):
 		return self.__problemJSON()['problem_id']
+		
+	def testCases(self):
+		return self.__problemJSON()['test_cases']
+
 		
 	@classmethod
 	def ProblemContextsForDirectory(cls, rootDirectory):

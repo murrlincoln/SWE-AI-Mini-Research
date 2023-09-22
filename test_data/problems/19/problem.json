@@ -1,6 +1,6 @@
 {
     "category": "Math",
-    "function siganture": {
+    "function_prototype": {
         "function_name": "fibonacci",
         "parameters": [
             {
@@ -31,6 +31,26 @@
         {
             "content": "Write a Python function to pass the following tests: def test_1():\n  input = 0\n  assert function(input) == [0]\n\ndef test_2():\n  input = 1\n  assert function(input) == [0, 1]\n\ndef test_3():\n  input = 6\n  assert function(input) == [0, 1, 1, 2, 3, 5]",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "[0]",
+            "parameters": {
+                "num": "num = 0"
+            }
+        },
+        {
+            "expected_output": "[0, 1]",
+            "parameters": {
+                "num": "num = 1"
+            }
+        },
+        {
+            "expected_output": "[0, 1, 1, 2, 3, 5]",
+            "parameters": {
+                "num": "num = 6"
+            }
         }
     ]
 }

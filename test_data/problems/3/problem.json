@@ -1,6 +1,6 @@
 {
     "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the nth Fibonacci number using recursion.",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "fibonacci",
         "parameters": [
             {
@@ -31,6 +31,26 @@
         {
             "content": "Write a Python function to pass the following tests: def test_generic_3():\n  assert function(0) == 0\n  assert function(1) == 1\n assert function(6) == 8",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "0",
+            "parameters": {
+                "n": "0"
+            }
+        },
+        {
+            "expected_output": "1",
+            "parameters": {
+                "n": "1"
+            }
+        },
+        {
+            "expected_output": "8",
+            "parameters": {
+                "n": "6"
+            }
         }
     ]
 }

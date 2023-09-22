@@ -1,6 +1,6 @@
 {
     "category": "Math",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "multiply_list",
         "parameters": [
             {
@@ -31,6 +31,26 @@
         {
             "content": "Write a Python function to pass the following tests: def test_1():\n  input = []\n  assert function(input) == 1\n\ndef test_2():\n  input = [2]\n  assert function(input) == 2\n\ndef test_3():\n  input = [1, 2, 3]\n  assert function(input) == 6",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "1",
+            "parameters": {
+                "nums": "nums = []"
+            }
+        },
+        {
+            "expected_output": "2",
+            "parameters": {
+                "nums": "nums = [2]"
+            }
+        },
+        {
+            "expected_output": "6",
+            "parameters": {
+                "nums": "nums = [1"
+            }
         }
     ]
 }

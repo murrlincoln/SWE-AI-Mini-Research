@@ -3,7 +3,7 @@
         {
             "problem_id": "sort_even_numbers_in_array",
             "description": "This problem tests the ability to work with arrays and sorting algorithms. The task is to implement a function that takes an array of integers and sorts the even numbers in ascending order, while leaving the odd numbers in their original positions.",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "sort_even_numbers",
                 "parameters": [
                     {
@@ -36,15 +36,38 @@
                 }
             ],
             "id": "0",
-            "model": "GPT-4"
+            "model": "GPT-4",
+            "test_cases": [
+                {
+                    "parameters": {
+                        "arr": "[5,3,2,8,1,4]"
+                    },
+                    "expected_output": "[5, 3, 2, 4, 1, 8]"
+                },
+                {
+                    "parameters": {
+                        "arr": "[0,1,2,3,4,5]"
+                    },
+                    "expected_output": "[0, 1, 2, 3, 4, 5]"
+                }
+            ]
         },
         {
             "problem_id": "reverse_vowels_in_string",
             "description": "This problem tests the ability to manipulate strings. The task is to implement a function that reverses the vowels in a given string.",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "reverse_vowels",
-                "parameters": [{"name": "s", "type": "str"}],
-                "return_values": [{"type": "str"}]
+                "parameters": [
+                    {
+                        "name": "s",
+                        "type": "str"
+                    }
+                ],
+                "return_values": [
+                    {
+                        "type": "str"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -65,15 +88,38 @@
                 }
             ],
             "id": "1",
-            "model": "GPT-4"
+            "model": "GPT-4",
+            "test_cases": [
+                {
+                    "parameters": {
+                        "s": "'hello'"
+                    },
+                    "expected_output": "'holle'"
+                },
+                {
+                    "parameters": {
+                        "s": "'world'"
+                    },
+                    "expected_output": "'world'"
+                }
+            ]
         },
         {
             "problem_id": "reverse_singly_linked_list",
             "description": "This problem tests the ability to manipulate data structures, specifically linked lists. The task is to implement a function that reverses a singly linked list.",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "reverse_linked_list",
-                "parameters": [{"name": "ll", "type": "List[int]"}],
-                "return_values": [{"type": "List[int]"}]
+                "parameters": [
+                    {
+                        "name": "ll",
+                        "type": "List[int]"
+                    }
+                ],
+                "return_values": [
+                    {
+                        "type": "List[int]"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -94,15 +140,38 @@
                 }
             ],
             "id": "2",
-            "model": "GPT-4"
+            "model": "GPT-4",
+            "test_cases": [
+                {
+                    "parameters": {
+                        "ll": "1 -> 2 -> 3 -> 4"
+                    },
+                    "expected_output": "4 -> 3 -> 2 -> 1"
+                },
+                {
+                    "parameters": {
+                        "ll": "1"
+                    },
+                    "expected_output": "1"
+                }
+            ]
         },
         {
             "problem_id": "fibonacci_recursive",
             "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the nth Fibonacci number using recursion.",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "fibonacci",
-                "parameters": [{"name": "n", "type": "int"}],
-                "return_values": [{"type": "int"}]
+                "parameters": [
+                    {
+                        "name": "n",
+                        "type": "int"
+                    }
+                ],
+                "return_values": [
+                    {
+                        "type": "int"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -123,15 +192,44 @@
                 }
             ],
             "id": "3",
-            "model": "GPT-4"
+            "model": "GPT-4",
+            "test_cases": [
+                {
+                    "parameters": {
+                        "n": "0"
+                    },
+                    "expected_output": "0"
+                },
+                {
+                    "parameters": {
+                        "n": "1"
+                    },
+                    "expected_output": "1"
+                },
+                {
+                    "parameters": {
+                        "n": "6"
+                    },
+                    "expected_output": "8"
+                }
+            ]
         },
         {
             "problem_id": "max_product_of_two_integers",
             "description": "This problem tests the ability to work with basic algorithms. The task is to find the maximum product of any two integers in a given list.",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "max_product",
-                "parameters": [{"name": "nums", "type": "List[int]"}],
-                "return_values": [{"type": "int"}]
+                "parameters": [
+                    {
+                        "name": "nums",
+                        "type": "List[int]"
+                    }
+                ],
+                "return_values": [
+                    {
+                        "type": "int"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -152,15 +250,38 @@
                 }
             ],
             "id": "4",
-            "model": "GPT-4"
+            "model": "GPT-4",
+            "test_cases": [
+                {
+                    "parameters": {
+                        "nums": "[1,2,3,4]"
+                    },
+                    "expected_output": "12"
+                },
+                {
+                    "parameters": {
+                        "nums": "[-1,-2,-3,-4]"
+                    },
+                    "expected_output": "12"
+                }
+            ]
         },
         {
             "problem_id": "check_if_binary_tree_is_balanced",
             "description": "This problem tests the ability to work with tree data structures. The task is to implement a function that checks if a binary tree is balanced.",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "is_balanced",
-                "parameters": [{"name": "tree", "type": "TreeNode"}], 
-                "return_values": [{"type": "bool"}]
+                "parameters": [
+                    {
+                        "name": "tree",
+                        "type": "TreeNode"
+                    }
+                ],
+                "return_values": [
+                    {
+                        "type": "bool"
+                    }
+                ]
             },
             "input_code": "class TreeNode:\ndef __init__(self, val=0, left=None, right=None):\n                self.val = val\n                self.left = left\n                self.right = right\n",
             "prompts": [
@@ -182,15 +303,38 @@
                 }
             ],
             "id": "5",
-            "model": "GPT-4"
+            "model": "GPT-4",
+            "test_cases": [
+                {
+                    "parameters": {
+                        "tree": "Balanced Tree"
+                    },
+                    "expected_output": "True"
+                },
+                {
+                    "parameters": {
+                        "tree": "Unbalanced Tree"
+                    },
+                    "expected_output": "False"
+                }
+            ]
         },
         {
             "problem_id": "validate_email_address",
             "description": "This problem tests the ability to work with string manipulation and regular expressions. The task is to implement a function that validates an email address according to certain rules.",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "validate_email",
-                "parameters": [{"name": "email", "type": "str"}],
-                "return_values": [{"type": "bool"}]
+                "parameters": [
+                    {
+                        "name": "email",
+                        "type": "str"
+                    }
+                ],
+                "return_values": [
+                    {
+                        "type": "bool"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -211,18 +355,42 @@
                 }
             ],
             "id": "6",
-            "model": "GPT-4"
+            "model": "GPT-4",
+            "test_cases": [
+                {
+                    "parameters": {
+                        "email": "'test@example.com'"
+                    },
+                    "expected_output": "True"
+                },
+                {
+                    "parameters": {
+                        "email": "'test.example.com'"
+                    },
+                    "expected_output": "False"
+                }
+            ]
         },
         {
             "problem_id": "range_bitwise_and",
             "description": "This problem tests the ability to work with bitwise operations. The task is to implement a function that calculates the bitwise AND of all numbers in a range from m to n.",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "range_bitwise_and",
                 "parameters": [
-                    {"name": "m", "type": "int"},
-                    {"name": "n", "type": "int"}
+                    {
+                        "name": "m",
+                        "type": "int"
+                    },
+                    {
+                        "name": "n",
+                        "type": "int"
+                    }
                 ],
-                "return_values": [{"type": "int"}]
+                "return_values": [
+                    {
+                        "type": "int"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -243,17 +411,40 @@
                 }
             ],
             "id": "7",
-            "model": "GPT-4"
+            "model": "GPT-4",
+            "test_cases": [
+                {
+                    "parameters": {
+                        "m": "m = 5",
+                        "n": "n = 7"
+                    },
+                    "expected_output": "4"
+                },
+                {
+                    "parameters": {
+                        "m": "m = 0",
+                        "n": "n = 1"
+                    },
+                    "expected_output": "0"
+                }
+            ]
         },
         {
             "problem_id": "bubble_sort_array",
             "description": "This problem tests the ability to work with arrays and sorting. The task is to implement a function that sorts an array using the bubble sort algorithm.",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "bubble_sort",
                 "parameters": [
-                    {"name": "arr", "type": "List[int]"}
+                    {
+                        "name": "arr",
+                        "type": "List[int]"
+                    }
                 ],
-                "return_values": [{"type": "List[int]"}]
+                "return_values": [
+                    {
+                        "type": "List[int]"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -274,18 +465,42 @@
                 }
             ],
             "id": "8",
-            "model": "GPT-4"
+            "model": "GPT-4",
+            "test_cases": [
+                {
+                    "parameters": {
+                        "arr": "[5,3,1,4,6]"
+                    },
+                    "expected_output": "[1, 3, 4, 5, 6]"
+                },
+                {
+                    "parameters": {
+                        "arr": "[1,2,3,4,5]"
+                    },
+                    "expected_output": "[1, 2, 3, 4, 5]"
+                }
+            ]
         },
         {
             "problem_id": "depth_first_search",
             "description": "This problem tests the ability to work with graphs. The task is to implement a function that performs a depth-first search on a graph represented as an adjacency list.",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "depth_first_search",
                 "parameters": [
-                    {"name": "graph", "type": "Dict[int, List[int]]"},
-                    {"name": "start", "type": "int"}
+                    {
+                        "name": "graph",
+                        "type": "Dict[int, List[int]]"
+                    },
+                    {
+                        "name": "start",
+                        "type": "int"
+                    }
                 ],
-                "return_values": [{"type": "List[int]"}]
+                "return_values": [
+                    {
+                        "type": "List[int]"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -306,17 +521,40 @@
                 }
             ],
             "id": "9",
-            "model": "GPT-4"
+            "model": "GPT-4",
+            "test_cases": [
+                {
+                    "parameters": {
+                        "graph": "graph = {1: [2",
+                        "start": "3]"
+                    },
+                    "expected_output": "[1, 2, 4, 3]"
+                },
+                {
+                    "parameters": {
+                        "graph": "graph = {1: [2",
+                        "start": "3]"
+                    },
+                    "expected_output": "[1, 2, 3]"
+                }
+            ]
         },
         {
             "problem_id": "factorial_recursive_2",
             "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the factorial of a given number using recursion.",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "factorial_recursive_2",
                 "parameters": [
-                    {"name": "n", "type": "int"}
+                    {
+                        "name": "n",
+                        "type": "int"
+                    }
                 ],
-                "return_values": [{"type": "int"}]
+                "return_values": [
+                    {
+                        "type": "int"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -337,19 +575,40 @@
                 }
             ],
             "id": "10",
-            "model": "GPT-4"
+            "model": "GPT-4",
+            "test_cases": [
+                {
+                    "parameters": {
+                        "n": "5"
+                    },
+                    "expected_output": "120"
+                },
+                {
+                    "parameters": {
+                        "n": "1"
+                    },
+                    "expected_output": "1"
+                }
+            ]
         },
         {
             "category": "Math",
             "problem_id": "multiply_list",
             "model": "Claude-2",
             "id": "11",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "multiply_list",
                 "parameters": [
-                    {"name": "nums", "type": "list"}
+                    {
+                        "name": "nums",
+                        "type": "list"
+                    }
                 ],
-                "return_values": [{"type": "int"}]
+                "return_values": [
+                    {
+                        "type": "int"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -369,19 +628,45 @@
                     "content": "Write a Python function to pass the following tests: def test_1():\n  input = []\n  assert function(input) == 1\n\ndef test_2():\n  input = [2]\n  assert function(input) == 2\n\ndef test_3():\n  input = [1, 2, 3]\n  assert function(input) == 6"
                 }
             ],
-            "id": "11"
+            "test_cases": [
+                {
+                    "parameters": {
+                        "nums": "nums = []"
+                    },
+                    "expected_output": "1"
+                },
+                {
+                    "parameters": {
+                        "nums": "nums = [2]"
+                    },
+                    "expected_output": "2"
+                },
+                {
+                    "parameters": {
+                        "nums": "nums = [1"
+                    },
+                    "expected_output": "6"
+                }
+            ]
         },
         {
             "category": "String",
             "problem_id": "count_vowels",
             "model": "Claude-2",
             "id": "12",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "count_vowels",
                 "parameters": [
-                    {"name": "text", "type": "str"}
+                    {
+                        "name": "text",
+                        "type": "str"
+                    }
                 ],
-                "return_values": [{"type": "int"}]
+                "return_values": [
+                    {
+                        "type": "int"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -391,7 +676,6 @@
                 {
                     "type": "prompt_with_tests",
                     "content": "Write a function called `count_vowels` that takes a string and returns the number of vowels. \n\nTest Cases:\n- Input: text = ''\n  Expected Output: 0\n- Input: text = 'try'\n  Expected Output: 0\n- Input: text = 'apple'\n  Expected Output: 2"
-
                 },
                 {
                     "type": "prompt_tests_only",
@@ -401,6 +685,26 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == 0\n\ndef test_2():\n  input = 'try'\n  assert function(input) == 0\n\ndef test_3():\n  input = 'apple'\n  assert function(input) == 2"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "text": "text = ''"
+                    },
+                    "expected_output": "0"
+                },
+                {
+                    "parameters": {
+                        "text": "text = 'try'"
+                    },
+                    "expected_output": "0"
+                },
+                {
+                    "parameters": {
+                        "text": "text = 'apple'"
+                    },
+                    "expected_output": "2"
+                }
             ]
         },
         {
@@ -408,12 +712,19 @@
             "problem_id": "is_palindrome",
             "id": "13",
             "model": "Claude-2",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "is_palindrome",
                 "parameters": [
-                    {"name": "text", "type": "str"}
+                    {
+                        "name": "text",
+                        "type": "str"
+                    }
                 ],
-                "return_values": [{"type": "bool"}]
+                "return_values": [
+                    {
+                        "type": "bool"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -432,6 +743,26 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == True\n\ndef test_2():\n  input = 'hello'\n  assert function(input) == False\n\ndef test_3():\n  input = 'racecar'\n  assert function(input) == True"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "text": "text = ''"
+                    },
+                    "expected_output": "True"
+                },
+                {
+                    "parameters": {
+                        "text": "text = 'hello'"
+                    },
+                    "expected_output": "False"
+                },
+                {
+                    "parameters": {
+                        "text": "text = 'racecar'"
+                    },
+                    "expected_output": "True"
+                }
             ]
         },
         {
@@ -439,12 +770,19 @@
             "problem_id": "longest_word",
             "id": "14",
             "model": "Claude-2",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "longest_word",
                 "parameters": [
-                    {"name": "sentence", "type": "str"}
+                    {
+                        "name": "sentence",
+                        "type": "str"
+                    }
                 ],
-                "return_values": [{"type": "str"}]
+                "return_values": [
+                    {
+                        "type": "str"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -454,7 +792,6 @@
                 {
                     "type": "prompt_with_tests",
                     "content": "Write a function called `longest_word` that takes a sentence and returns the longest word. \n\nTest Cases:\n- Input: sentence = ''\n  Expected Output: ''\n- Input: sentence = 'hi'\n  Expected Output: 'hi'\n- Input: sentence = 'hello there my friend'\n  Expected Output: 'hello'"
-
                 },
                 {
                     "type": "prompt_tests_only",
@@ -464,6 +801,26 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2(): \n  input = 'hi'\n  assert function(input) == 'hi'\n\ndef test_3():\n  input = 'hello there my friend'\n  assert function(input) == 'hello'"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "sentence": "sentence = ''"
+                    },
+                    "expected_output": "''"
+                },
+                {
+                    "parameters": {
+                        "sentence": "sentence = 'hi'"
+                    },
+                    "expected_output": "'hi'"
+                },
+                {
+                    "parameters": {
+                        "sentence": "sentence = 'hello there my friend'"
+                    },
+                    "expected_output": "'hello'"
+                }
             ]
         },
         {
@@ -471,12 +828,19 @@
             "problem_id": "capitalize",
             "id": "15",
             "model": "Claude-2",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "capitalize",
                 "parameters": [
-                    {"name": "text", "type": "str"}
+                    {
+                        "name": "text",
+                        "type": "str"
+                    }
                 ],
-                "return_values": [{"type": "str"}]
+                "return_values": [
+                    {
+                        "type": "str"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -495,6 +859,26 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'hello'\n  assert function(input) == 'Hello'\n\ndef test_3():\n  input = 'hello world'\n  assert function(input) == 'Hello World'"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "text": "text = ''"
+                    },
+                    "expected_output": "''"
+                },
+                {
+                    "parameters": {
+                        "text": "text = 'hello'"
+                    },
+                    "expected_output": "'Hello'"
+                },
+                {
+                    "parameters": {
+                        "text": "text = 'hello world'"
+                    },
+                    "expected_output": "'Hello World'"
+                }
             ]
         },
         {
@@ -502,12 +886,19 @@
             "problem_id": "reverse_string",
             "id": "16",
             "model": "Claude-2",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "reverse_string",
                 "parameters": [
-                    {"name": "text", "type": "str"}
+                    {
+                        "name": "text",
+                        "type": "str"
+                    }
                 ],
-                "return_values": [{"type": "str"}]
+                "return_values": [
+                    {
+                        "type": "str"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -526,6 +917,26 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == ''\n\ndef test_2():\n  input = 'a'\n  assert function(input) == 'a'\n\ndef test_3():\n  input = 'abc'\n  assert function(input) == 'cba'"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "text": "text = ''"
+                    },
+                    "expected_output": "''"
+                },
+                {
+                    "parameters": {
+                        "text": "text = 'a'"
+                    },
+                    "expected_output": "'a'"
+                },
+                {
+                    "parameters": {
+                        "text": "text = 'abc'"
+                    },
+                    "expected_output": "'cba'"
+                }
             ]
         },
         {
@@ -533,12 +944,19 @@
             "problem_id": "count_digits",
             "id": "17",
             "model": "Claude-2",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "count_digits",
                 "parameters": [
-                    {"name": "num", "type": "int"}
+                    {
+                        "name": "num",
+                        "type": "int"
+                    }
                 ],
-                "return_values": [{"type": "int"}]
+                "return_values": [
+                    {
+                        "type": "int"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -557,6 +975,26 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_1():\n  input = 0\n  assert function(input) == 1\n\ndef test_2():\n  input = 5\n  assert function(input) == 1\n\ndef test_3():\n  input = 348\n  assert function(input) == 3"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "num": "num = 0"
+                    },
+                    "expected_output": "1"
+                },
+                {
+                    "parameters": {
+                        "num": "num = 5"
+                    },
+                    "expected_output": "1"
+                },
+                {
+                    "parameters": {
+                        "num": "num = 348"
+                    },
+                    "expected_output": "3"
+                }
             ]
         },
         {
@@ -564,12 +1002,19 @@
             "problem_id": "factorial",
             "id": "18",
             "model": "Claude-2",
-            "function_signature": {
+            "function_prototype": {
                 "function_name": "factorial",
                 "parameters": [
-                    {"name": "num", "type": "int"}
+                    {
+                        "name": "num",
+                        "type": "int"
+                    }
                 ],
-                "return_values": [{"type": "int"}]
+                "return_values": [
+                    {
+                        "type": "int"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -588,6 +1033,26 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_1():\n  input = 0\n  assert function(input) == 1\n\ndef test_2():\n  input = 1\n  assert function(input) == 1\n\ndef test_3():\n  input = 5\n  assert function(input) == 120"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "num": "num = 0"
+                    },
+                    "expected_output": "1"
+                },
+                {
+                    "parameters": {
+                        "num": "num = 1"
+                    },
+                    "expected_output": "1"
+                },
+                {
+                    "parameters": {
+                        "num": "num = 5"
+                    },
+                    "expected_output": "120"
+                }
             ]
         },
         {
@@ -595,12 +1060,19 @@
             "problem_id": "fibonacci",
             "id": "19",
             "model": "Claude-2",
-            "function siganture": {
+            "function_prototype": {
                 "function_name": "fibonacci",
                 "parameters": [
-                    {"name": "num", "type": "int"}
+                    {
+                        "name": "num",
+                        "type": "int"
+                    }
                 ],
-                "return_values": [{"type": "list"}]
+                "return_values": [
+                    {
+                        "type": "list"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -619,6 +1091,26 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_1():\n  input = 0\n  assert function(input) == [0]\n\ndef test_2():\n  input = 1\n  assert function(input) == [0, 1]\n\ndef test_3():\n  input = 6\n  assert function(input) == [0, 1, 1, 2, 3, 5]"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "num": "num = 0"
+                    },
+                    "expected_output": "[0]"
+                },
+                {
+                    "parameters": {
+                        "num": "num = 1"
+                    },
+                    "expected_output": "[0, 1]"
+                },
+                {
+                    "parameters": {
+                        "num": "num = 6"
+                    },
+                    "expected_output": "[0, 1, 1, 2, 3, 5]"
+                }
             ]
         },
         {
@@ -629,9 +1121,16 @@
             "function_prototype": {
                 "function_name": "fizzbuzz",
                 "parameters": [
-                    {"name": "num", "type": "int"}
+                    {
+                        "name": "num",
+                        "type": "int"
+                    }
                 ],
-                "return_values": [{"type": "str"}]
+                "return_values": [
+                    {
+                        "type": "str"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -650,6 +1149,26 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_1():\n  input = 3\n  assert function(input) == 'Fizz'\n\ndef test_2():\n  input = 5 \n  assert function(input) == 'Buzz'\n\ndef test_3():\n input = 15\n assert function(input) == 'FizzBuzz'"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "num": "num = 3"
+                    },
+                    "expected_output": "'Fizz'"
+                },
+                {
+                    "parameters": {
+                        "num": "num = 5"
+                    },
+                    "expected_output": "'Buzz'"
+                },
+                {
+                    "parameters": {
+                        "num": "num = 15"
+                    },
+                    "expected_output": "'FizzBuzz'"
+                }
             ]
         },
         {
@@ -660,9 +1179,16 @@
             "function_prototype": {
                 "function_name": "find_first_non_repeating_char",
                 "parameters": [
-                    {"name": "text", "type": "str"}
+                    {
+                        "name": "text",
+                        "type": "str"
+                    }
                 ],
-                "return_values": [{"type": "str"}]
+                "return_values": [
+                    {
+                        "type": "str"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -681,6 +1207,20 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_generic_21():\n  assert function('abca') == 'b'\n  assert function('ccbaab') == 'b'"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "text": "'abca'"
+                    },
+                    "expected_output": "'b'"
+                },
+                {
+                    "parameters": {
+                        "text": "'ccbaab'"
+                    },
+                    "expected_output": "'b'"
+                }
             ]
         },
         {
@@ -691,9 +1231,16 @@
             "function_prototype": {
                 "function_name": "find_longest_substring_without_repeating_characters",
                 "parameters": [
-                    {"name": "text", "type": "str"}
+                    {
+                        "name": "text",
+                        "type": "str"
+                    }
                 ],
-                "return_values": [{"type": "str"}]
+                "return_values": [
+                    {
+                        "type": "str"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -712,6 +1259,20 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_generic_22():\n  assert function('abcabcbb') == 'abc'\n  assert function('bbbbb') == 'b'"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "text": "'abcabcbb'"
+                    },
+                    "expected_output": "'abc'"
+                },
+                {
+                    "parameters": {
+                        "text": "'bbbbb'"
+                    },
+                    "expected_output": "'b'"
+                }
             ]
         },
         {
@@ -722,10 +1283,20 @@
             "function_prototype": {
                 "function_name": "longest_substring_with_k_distinct_characters",
                 "parameters": [
-                    {"name": "text", "type": "str"},
-                    {"name": "k", "type": "int"}
+                    {
+                        "name": "text",
+                        "type": "str"
+                    },
+                    {
+                        "name": "k",
+                        "type": "int"
+                    }
                 ],
-                "return_values": [{"type": "str"}]
+                "return_values": [
+                    {
+                        "type": "str"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -738,11 +1309,27 @@
                 },
                 {
                     "type": "prompt_tests_only",
-                    "content":"Write a Python function to pass the following tests: def test_longest_substring_with_k_distinct_characters():\n  assert longest_substring_with_k_distinct_characters('abcabcbb', 3) == 'abc'\n  assert longest_substring_with_k_distinct_characters('bbbbb', 3) == ''"
+                    "content": "Write a Python function to pass the following tests: def test_longest_substring_with_k_distinct_characters():\n  assert longest_substring_with_k_distinct_characters('abcabcbb', 3) == 'abc'\n  assert longest_substring_with_k_distinct_characters('bbbbb', 3) == ''"
                 },
                 {
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_generic_23():\n  assert function('abcabcbb', 3) == 'abc'\n  assert function('bbbbb', 3) == ''"
+                }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "text": "'abcabcbb'",
+                        "k": "k = 3"
+                    },
+                    "expected_output": "'abc'"
+                },
+                {
+                    "parameters": {
+                        "text": "'bbbbb'",
+                        "k": "k = 3"
+                    },
+                    "expected_output": "''"
                 }
             ]
         },
@@ -754,9 +1341,16 @@
             "function_prototype": {
                 "function_name": "longest_palindromic_substring",
                 "parameters": [
-                    {"name": "text", "type": "str"}
+                    {
+                        "name": "text",
+                        "type": "str"
+                    }
                 ],
-                "return_values": [{"type": "str"}]
+                "return_values": [
+                    {
+                        "type": "str"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -775,6 +1369,20 @@
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_generic_24():\n  assert function('babad') == 'bab'\n  assert function('cbbd') == 'bb'"
                 }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "text": "'babad'"
+                    },
+                    "expected_output": "'bab'"
+                },
+                {
+                    "parameters": {
+                        "text": "'cbbd'"
+                    },
+                    "expected_output": "'bb'"
+                }
             ]
         },
         {
@@ -785,10 +1393,20 @@
             "function_prototype": {
                 "function_name": "longest_common_substring",
                 "parameters": [
-                    {"name": "text1", "type": "str"},
-                    {"name": "text2", "type": "str"}
+                    {
+                        "name": "text1",
+                        "type": "str"
+                    },
+                    {
+                        "name": "text2",
+                        "type": "str"
+                    }
                 ],
-                "return_values": [{"type": "str"}]
+                "return_values": [
+                    {
+                        "type": "str"
+                    }
+                ]
             },
             "prompts": [
                 {
@@ -806,6 +1424,22 @@
                 {
                     "type": "prompt_generic_tests",
                     "content": "Write a Python function to pass the following tests: def test_generic_25():\n  assert function('abcde', 'bcde') == 'bcde'\n  assert function('abcdef', 'abef') == 'abe'"
+                }
+            ],
+            "test_cases": [
+                {
+                    "parameters": {
+                        "text1": "'abcde'",
+                        "text2": "'bcde'"
+                    },
+                    "expected_output": "'bcde'"
+                },
+                {
+                    "parameters": {
+                        "text1": "'abcdef'",
+                        "text2": "'abef'"
+                    },
+                    "expected_output": "'abe'"
                 }
             ]
         }

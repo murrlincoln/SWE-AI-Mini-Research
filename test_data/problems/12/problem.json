@@ -1,6 +1,6 @@
 {
     "category": "String",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "count_vowels",
         "parameters": [
             {
@@ -31,6 +31,26 @@
         {
             "content": "Write a Python function to pass the following tests: def test_1():\n  input = ''\n  assert function(input) == 0\n\ndef test_2():\n  input = 'try'\n  assert function(input) == 0\n\ndef test_3():\n  input = 'apple'\n  assert function(input) == 2",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "0",
+            "parameters": {
+                "text": "text = ''"
+            }
+        },
+        {
+            "expected_output": "0",
+            "parameters": {
+                "text": "text = 'try'"
+            }
+        },
+        {
+            "expected_output": "2",
+            "parameters": {
+                "text": "text = 'apple'"
+            }
         }
     ]
 }

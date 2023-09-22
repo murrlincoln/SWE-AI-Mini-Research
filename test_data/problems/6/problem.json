@@ -1,6 +1,6 @@
 {
     "description": "This problem tests the ability to work with string manipulation and regular expressions. The task is to implement a function that validates an email address according to certain rules.",
-    "function_signature": {
+    "function_prototype": {
         "function_name": "validate_email",
         "parameters": [
             {
@@ -31,6 +31,20 @@
         {
             "content": "Write a Python function to pass the following tests: def test_generic_6():\n  assert function('test@example.com') == True\n  assert function('test.example.com') == False",
             "type": "prompt_generic_tests"
+        }
+    ],
+    "test_cases": [
+        {
+            "expected_output": "True",
+            "parameters": {
+                "email": "'test@example.com'"
+            }
+        },
+        {
+            "expected_output": "False",
+            "parameters": {
+                "email": "'test.example.com'"
+            }
         }
     ]
 }
