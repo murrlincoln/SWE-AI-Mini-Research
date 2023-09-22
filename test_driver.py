@@ -1,6 +1,13 @@
 import sys
 import os
 from contexts import ModelContext
+from typing import List
+
+def add_line_numbers(text):
+	lines = text.split("\n")
+	numbered_lines = ["{}: {}".format(i+1, line) for i, line in enumerate(lines)]
+	return "\n".join(numbered_lines)
+
 
 def execute_function(function_code: str, test_case: dict) -> bool:
 	"""
@@ -19,8 +26,7 @@ def execute_function(function_code: str, test_case: dict) -> bool:
 	# Get function name from the code (assuming the function name is the word after "def")
 	function_name = function_code.split("def")[1].split("(")[0].strip()
 	
-	# Extract parameters from the test case
-	parameters = eval(test_case['parameters'])
+	parameters = test_case['parameters']
 	
 	# Call the function using extracted parameters
 	result = eval(f"{function_name}(**parameters)")
@@ -48,9 +54,11 @@ if __name__ == "__main__":
 				for solution_file in os.listdir(generated_path):
 					print(solution_file)
 					if os.path.splitext(solution_file)[1] == '.py':
-						with open(os.path.join(generated_path, solution_file)) as f:
+						solution_path = os.path.join(generated_path, solution_file)
+						print(f"*** {solution_path}")
+						with open(solution_path) as f:
 							solution_code = f.read()
-						print(solution_code)
+						print(add_line_numbers(solution_code))
 						for test_case in problemContext.testCases():
 							execute_function(solution_code, test_case)
 	else:

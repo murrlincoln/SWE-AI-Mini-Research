@@ -13,8 +13,10 @@ def handle_problem(problemContext, querier, solutions_per_problem):
             outputPath = os.path.join(runContext.generatedPath(), type + ".py")
             if not os.path.exists(outputPath):
                 print(f"Prompting for problem {problemContext.problemName()} with prompt type {type}")
+                
+                instructions = f"Generate a Python function adhering to the following prompt: {content}\n\nUse the following prototype: {problemContext.functionPrototype()}\n\nProvide only the function asked for. If you need to use helper functions, they should be defined before the function. Do not include tests or any other information. Your response will be directly executed and tested."
             
-                response = querier.performQuery(content)
+                response = querier.performQuery(instructions)
                 print('-' * 60)
                 print(response)
                 print('-' * 60)

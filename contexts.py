@@ -1,7 +1,7 @@
 import os
 import json
 
-class FunctionSignature:
+class FunctionPrototype:
 	def __init__(self, data):
 		self.function_name = data["function_name"]
 		self.parameters = [Parameter(p) for p in data["parameters"]]
@@ -132,7 +132,9 @@ class ProblemContext:
 	def testCases(self):
 		return self.__problemJSON()['test_cases']
 
-		
+	def functionPrototype(self):
+		return FunctionPrototype(self.__problemJSON()['function_prototype'])
+	
 	@classmethod
 	def ProblemContextsForDirectory(cls, rootDirectory):
 		problemsData = []

@@ -23,12 +23,11 @@ class HumanQuerier(Querier):
 		lines = []
 		try:
 			for line in sys.stdin:
-				line = line.strip()
 				lines.append(line)
 		except EOFError:
 			pass
 		print(lines)
-		return "\n".join(lines)
+		return "".join(lines)
 
 class OpenAIQuerier(Querier):
 	def __init__(self, model):
@@ -36,7 +35,7 @@ class OpenAIQuerier(Querier):
 		pass
 		
 	def performQuery(self, prompt):
-		prompt_content = f"Generate a Python function adhering to the following prompt: {prompt}"
+		prompt_content = f"{prompt}"
 		print(prompt_content)
 		# Send the prompt to the OpenAI API
 		# This assumes that you have the OPENAI_API_KEY environment variable set
