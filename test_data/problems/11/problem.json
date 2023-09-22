@@ -35,19 +35,25 @@
     ],
     "test_cases": [
         {
-            "expected_output": "1",
+            "expected_output": [
+                "1"
+            ],
             "parameters": {
                 "nums": "nums = []"
             }
         },
         {
-            "expected_output": "2",
+            "expected_output": [
+                "2"
+            ],
             "parameters": {
                 "nums": "nums = [2]"
             }
         },
         {
-            "expected_output": "6",
+            "expected_output": [
+                "6"
+            ],
             "parameters": {
                 "nums": "nums = [1"
             }

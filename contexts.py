@@ -1,5 +1,7 @@
 import os
 import json
+import ast
+from typing import Dict, Any
 
 class FunctionPrototype:
 	def __init__(self, data):
@@ -12,9 +14,43 @@ class FunctionPrototype:
 		return_values_str = ", ".join([str(r) for r in self.return_values])
 		return f"{self.function_name}({params_str}) -> {return_values_str}"
 	
-	def get_parameter_values(self):
-		"""Returns a list of parameter values."""
-		return [param.name for param in self.parameters]
+	def get_python_type(self, param_type, input):
+		# Based on the type, convert the string representation to the appropriate Python object
+		if param_type == "int":
+			return int(input)
+		elif param_type == "float":
+			return float(input)
+		elif param_type.startswith("List[int]"):
+			# Using ast.literal_eval to safely evaluate the string representation
+			return ast.literal_eval(input)
+	
+	def get_parameter_values(self, test_case: Dict[str, str]) -> Dict[str, Any]:
+		converted_params = {}
+		
+		for param in self.parameters:
+			converted_params[param.name] = self.get_python_type(param.type, test_case["parameters"][param.name])
+		
+		return converted_params
+		
+		
+	def get_return_values(self, test_case: Dict[str, str]) -> Dict[str, Any]:
+		converted_retvals = []
+		
+		expectedOutput = test_case["expected_output"]
+		
+		for retval, expected in zip(self.return_values, expectedOutput):
+			# Extract the type of the parameter
+			converted_retvals.append(self.get_python_type(retval.type, expected))
+			
+		if len(converted_retvals) == 1:
+			return converted_retvals[0]
+		elif len(converted_retvals) > 1:
+			return tuple(converted_retvals)
+		else:
+			return None	
+
+
+
 
 class Parameter:
 	def __init__(self, data):

@@ -35,19 +35,25 @@
     ],
     "test_cases": [
         {
-            "expected_output": "''",
+            "expected_output": [
+                "''"
+            ],
             "parameters": {
                 "text": "text = ''"
             }
         },
         {
-            "expected_output": "'Hello'",
+            "expected_output": [
+                "'Hello'"
+            ],
             "parameters": {
                 "text": "text = 'hello'"
             }
         },
         {
-            "expected_output": "'Hello World'",
+            "expected_output": [
+                "'Hello World'"
+            ],
             "parameters": {
                 "text": "text = 'hello world'"
             }

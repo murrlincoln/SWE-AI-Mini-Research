@@ -35,13 +35,17 @@
     ],
     "test_cases": [
         {
-            "expected_output": "'holle'",
+            "expected_output": [
+                "'holle'"
+            ],
             "parameters": {
                 "s": "'hello'"
             }
         },
         {
-            "expected_output": "'world'",
+            "expected_output": [
+                "'world'"
+            ],
             "parameters": {
                 "s": "'world'"
             }

@@ -35,13 +35,17 @@
     ],
     "test_cases": [
         {
-            "expected_output": "True",
+            "expected_output": [
+                "True"
+            ],
             "parameters": {
                 "email": "'test@example.com'"
             }
         },
         {
-            "expected_output": "False",
+            "expected_output": [
+                "False"
+            ],
             "parameters": {
                 "email": "'test.example.com'"
             }

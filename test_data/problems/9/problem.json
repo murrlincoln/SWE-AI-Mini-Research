@@ -39,14 +39,18 @@
     ],
     "test_cases": [
         {
-            "expected_output": "[1, 2, 4, 3]",
+            "expected_output": [
+                "[1, 2, 4, 3]"
+            ],
             "parameters": {
                 "graph": "graph = {1: [2",
                 "start": "3]"
             }
         },
         {
-            "expected_output": "[1, 2, 3]",
+            "expected_output": [
+                "[1, 2, 3]"
+            ],
             "parameters": {
                 "graph": "graph = {1: [2",
                 "start": "3]"

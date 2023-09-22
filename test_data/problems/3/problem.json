@@ -41,13 +41,17 @@
             }
         },
         {
-            "expected_output": "1",
+            "expected_output": [
+                "1"
+            ],
             "parameters": {
                 "n": "1"
             }
         },
         {
-            "expected_output": "8",
+            "expected_output": [
+                "8"
+            ],
             "parameters": {
                 "n": "6"
             }

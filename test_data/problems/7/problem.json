@@ -39,14 +39,18 @@
     ],
     "test_cases": [
         {
-            "expected_output": "4",
+            "expected_output": [
+                "4"
+            ],
             "parameters": {
                 "m": "m = 5",
                 "n": "n = 7"
             }
         },
         {
-            "expected_output": "0",
+            "expected_output": [
+                "0"
+            ],
             "parameters": {
                 "m": "m = 0",
                 "n": "n = 1"

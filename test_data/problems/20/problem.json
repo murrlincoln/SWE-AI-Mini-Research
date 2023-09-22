@@ -35,19 +35,25 @@
     ],
     "test_cases": [
         {
-            "expected_output": "'Fizz'",
+            "expected_output": [
+                "'Fizz'"
+            ],
             "parameters": {
                 "num": "num = 3"
             }
         },
         {
-            "expected_output": "'Buzz'",
+            "expected_output": [
+                "'Buzz'"
+            ],
             "parameters": {
                 "num": "num = 5"
             }
         },
         {
-            "expected_output": "'FizzBuzz'",
+            "expected_output": [
+                "'FizzBuzz'"
+            ],
             "parameters": {
                 "num": "num = 15"
             }

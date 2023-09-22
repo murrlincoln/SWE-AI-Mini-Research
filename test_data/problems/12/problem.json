@@ -35,19 +35,25 @@
     ],
     "test_cases": [
         {
-            "expected_output": "0",
+            "expected_output": [
+                "0"
+            ],
             "parameters": {
                 "text": "text = ''"
             }
         },
         {
-            "expected_output": "0",
+            "expected_output": [
+                "0"
+            ],
             "parameters": {
                 "text": "text = 'try'"
             }
         },
         {
-            "expected_output": "2",
+            "expected_output": [
+                "2"
+            ],
             "parameters": {
                 "text": "text = 'apple'"
             }

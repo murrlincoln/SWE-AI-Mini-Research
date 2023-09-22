@@ -35,13 +35,17 @@
     ],
     "test_cases": [
         {
-            "expected_output": "'bab'",
+            "expected_output": [
+                "'bab'"
+            ],
             "parameters": {
                 "text": "'babad'"
             }
         },
         {
-            "expected_output": "'bb'",
+            "expected_output": [
+                "'bb'"
+            ],
             "parameters": {
                 "text": "'cbbd'"
             }

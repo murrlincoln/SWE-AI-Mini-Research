@@ -42,13 +42,17 @@
                     "parameters": {
                         "arr": "[5,3,2,8,1,4]"
                     },
-                    "expected_output": "[5, 3, 2, 4, 1, 8]"
+                    "expected_output": [
+                        "[5, 3, 2, 4, 1, 8]"
+                    ]
                 },
                 {
                     "parameters": {
                         "arr": "[0,1,2,3,4,5]"
                     },
-                    "expected_output": "[0, 1, 2, 3, 4, 5]"
+                    "expected_output": [
+                        "[0, 1, 2, 3, 4, 5]"
+                    ]
                 }
             ]
         },
@@ -94,13 +98,17 @@
                     "parameters": {
                         "s": "'hello'"
                     },
-                    "expected_output": "'holle'"
+                    "expected_output": [
+                        "'holle'"
+                    ]
                 },
                 {
                     "parameters": {
                         "s": "'world'"
                     },
-                    "expected_output": "'world'"
+                    "expected_output": [
+                        "'world'"
+                    ]
                 }
             ]
         },
@@ -152,7 +160,9 @@
                     "parameters": {
                         "ll": "1"
                     },
-                    "expected_output": "1"
+                    "expected_output": [
+                        "1"
+                    ]
                 }
             ]
         },
@@ -204,13 +214,17 @@
                     "parameters": {
                         "n": "1"
                     },
-                    "expected_output": "1"
+                    "expected_output": [
+                        "1"
+                    ]
                 },
                 {
                     "parameters": {
                         "n": "6"
                     },
-                    "expected_output": "8"
+                    "expected_output": [
+                        "8"
+                    ]
                 }
             ]
         },
@@ -256,13 +270,17 @@
                     "parameters": {
                         "nums": "[1,2,3,4]"
                     },
-                    "expected_output": "12"
+                    "expected_output": [
+                        "12"
+                    ]
                 },
                 {
                     "parameters": {
                         "nums": "[-1,-2,-3,-4]"
                     },
-                    "expected_output": "12"
+                    "expected_output": [
+                        "12"
+                    ]
                 }
             ]
         },
@@ -309,13 +327,17 @@
                     "parameters": {
                         "tree": "Balanced Tree"
                     },
-                    "expected_output": "True"
+                    "expected_output": [
+                        "True"
+                    ]
                 },
                 {
                     "parameters": {
                         "tree": "Unbalanced Tree"
                     },
-                    "expected_output": "False"
+                    "expected_output": [
+                        "False"
+                    ]
                 }
             ]
         },
@@ -361,13 +383,17 @@
                     "parameters": {
                         "email": "'test@example.com'"
                     },
-                    "expected_output": "True"
+                    "expected_output": [
+                        "True"
+                    ]
                 },
                 {
                     "parameters": {
                         "email": "'test.example.com'"
                     },
-                    "expected_output": "False"
+                    "expected_output": [
+                        "False"
+                    ]
                 }
             ]
         },
@@ -418,14 +444,18 @@
                         "m": "m = 5",
                         "n": "n = 7"
                     },
-                    "expected_output": "4"
+                    "expected_output": [
+                        "4"
+                    ]
                 },
                 {
                     "parameters": {
                         "m": "m = 0",
                         "n": "n = 1"
                     },
-                    "expected_output": "0"
+                    "expected_output": [
+                        "0"
+                    ]
                 }
             ]
         },
@@ -471,13 +501,17 @@
                     "parameters": {
                         "arr": "[5,3,1,4,6]"
                     },
-                    "expected_output": "[1, 3, 4, 5, 6]"
+                    "expected_output": [
+                        "[1, 3, 4, 5, 6]"
+                    ]
                 },
                 {
                     "parameters": {
                         "arr": "[1,2,3,4,5]"
                     },
-                    "expected_output": "[1, 2, 3, 4, 5]"
+                    "expected_output": [
+                        "[1, 2, 3, 4, 5]"
+                    ]
                 }
             ]
         },
@@ -528,14 +562,18 @@
                         "graph": "graph = {1: [2",
                         "start": "3]"
                     },
-                    "expected_output": "[1, 2, 4, 3]"
+                    "expected_output": [
+                        "[1, 2, 4, 3]"
+                    ]
                 },
                 {
                     "parameters": {
                         "graph": "graph = {1: [2",
                         "start": "3]"
                     },
-                    "expected_output": "[1, 2, 3]"
+                    "expected_output": [
+                        "[1, 2, 3]"
+                    ]
                 }
             ]
         },
@@ -581,13 +619,17 @@
                     "parameters": {
                         "n": "5"
                     },
-                    "expected_output": "120"
+                    "expected_output": [
+                        "120"
+                    ]
                 },
                 {
                     "parameters": {
                         "n": "1"
                     },
-                    "expected_output": "1"
+                    "expected_output": [
+                        "1"
+                    ]
                 }
             ]
         },
@@ -633,19 +675,25 @@
                     "parameters": {
                         "nums": "nums = []"
                     },
-                    "expected_output": "1"
+                    "expected_output": [
+                        "1"
+                    ]
                 },
                 {
                     "parameters": {
                         "nums": "nums = [2]"
                     },
-                    "expected_output": "2"
+                    "expected_output": [
+                        "2"
+                    ]
                 },
                 {
                     "parameters": {
                         "nums": "nums = [1"
                     },
-                    "expected_output": "6"
+                    "expected_output": [
+                        "6"
+                    ]
                 }
             ]
         },
@@ -691,19 +739,25 @@
                     "parameters": {
                         "text": "text = ''"
                     },
-                    "expected_output": "0"
+                    "expected_output": [
+                        "0"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "text = 'try'"
                     },
-                    "expected_output": "0"
+                    "expected_output": [
+                        "0"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "text = 'apple'"
                     },
-                    "expected_output": "2"
+                    "expected_output": [
+                        "2"
+                    ]
                 }
             ]
         },
@@ -749,19 +803,25 @@
                     "parameters": {
                         "text": "text = ''"
                     },
-                    "expected_output": "True"
+                    "expected_output": [
+                        "True"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "text = 'hello'"
                     },
-                    "expected_output": "False"
+                    "expected_output": [
+                        "False"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "text = 'racecar'"
                     },
-                    "expected_output": "True"
+                    "expected_output": [
+                        "True"
+                    ]
                 }
             ]
         },
@@ -807,19 +867,25 @@
                     "parameters": {
                         "sentence": "sentence = ''"
                     },
-                    "expected_output": "''"
+                    "expected_output": [
+                        "''"
+                    ]
                 },
                 {
                     "parameters": {
                         "sentence": "sentence = 'hi'"
                     },
-                    "expected_output": "'hi'"
+                    "expected_output": [
+                        "'hi'"
+                    ]
                 },
                 {
                     "parameters": {
                         "sentence": "sentence = 'hello there my friend'"
                     },
-                    "expected_output": "'hello'"
+                    "expected_output": [
+                        "'hello'"
+                    ]
                 }
             ]
         },
@@ -865,19 +931,25 @@
                     "parameters": {
                         "text": "text = ''"
                     },
-                    "expected_output": "''"
+                    "expected_output": [
+                        "''"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "text = 'hello'"
                     },
-                    "expected_output": "'Hello'"
+                    "expected_output": [
+                        "'Hello'"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "text = 'hello world'"
                     },
-                    "expected_output": "'Hello World'"
+                    "expected_output": [
+                        "'Hello World'"
+                    ]
                 }
             ]
         },
@@ -923,19 +995,25 @@
                     "parameters": {
                         "text": "text = ''"
                     },
-                    "expected_output": "''"
+                    "expected_output": [
+                        "''"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "text = 'a'"
                     },
-                    "expected_output": "'a'"
+                    "expected_output": [
+                        "'a'"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "text = 'abc'"
                     },
-                    "expected_output": "'cba'"
+                    "expected_output": [
+                        "'cba'"
+                    ]
                 }
             ]
         },
@@ -981,19 +1059,25 @@
                     "parameters": {
                         "num": "num = 0"
                     },
-                    "expected_output": "1"
+                    "expected_output": [
+                        "1"
+                    ]
                 },
                 {
                     "parameters": {
                         "num": "num = 5"
                     },
-                    "expected_output": "1"
+                    "expected_output": [
+                        "1"
+                    ]
                 },
                 {
                     "parameters": {
                         "num": "num = 348"
                     },
-                    "expected_output": "3"
+                    "expected_output": [
+                        "3"
+                    ]
                 }
             ]
         },
@@ -1039,19 +1123,25 @@
                     "parameters": {
                         "num": "num = 0"
                     },
-                    "expected_output": "1"
+                    "expected_output": [
+                        "1"
+                    ]
                 },
                 {
                     "parameters": {
                         "num": "num = 1"
                     },
-                    "expected_output": "1"
+                    "expected_output": [
+                        "1"
+                    ]
                 },
                 {
                     "parameters": {
                         "num": "num = 5"
                     },
-                    "expected_output": "120"
+                    "expected_output": [
+                        "120"
+                    ]
                 }
             ]
         },
@@ -1097,19 +1187,25 @@
                     "parameters": {
                         "num": "num = 0"
                     },
-                    "expected_output": "[0]"
+                    "expected_output": [
+                        "[0]"
+                    ]
                 },
                 {
                     "parameters": {
                         "num": "num = 1"
                     },
-                    "expected_output": "[0, 1]"
+                    "expected_output": [
+                        "[0, 1]"
+                    ]
                 },
                 {
                     "parameters": {
                         "num": "num = 6"
                     },
-                    "expected_output": "[0, 1, 1, 2, 3, 5]"
+                    "expected_output": [
+                        "[0, 1, 1, 2, 3, 5]"
+                    ]
                 }
             ]
         },
@@ -1155,19 +1251,25 @@
                     "parameters": {
                         "num": "num = 3"
                     },
-                    "expected_output": "'Fizz'"
+                    "expected_output": [
+                        "'Fizz'"
+                    ]
                 },
                 {
                     "parameters": {
                         "num": "num = 5"
                     },
-                    "expected_output": "'Buzz'"
+                    "expected_output": [
+                        "'Buzz'"
+                    ]
                 },
                 {
                     "parameters": {
                         "num": "num = 15"
                     },
-                    "expected_output": "'FizzBuzz'"
+                    "expected_output": [
+                        "'FizzBuzz'"
+                    ]
                 }
             ]
         },
@@ -1213,13 +1315,17 @@
                     "parameters": {
                         "text": "'abca'"
                     },
-                    "expected_output": "'b'"
+                    "expected_output": [
+                        "'b'"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "'ccbaab'"
                     },
-                    "expected_output": "'b'"
+                    "expected_output": [
+                        "'b'"
+                    ]
                 }
             ]
         },
@@ -1265,13 +1371,17 @@
                     "parameters": {
                         "text": "'abcabcbb'"
                     },
-                    "expected_output": "'abc'"
+                    "expected_output": [
+                        "'abc'"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "'bbbbb'"
                     },
-                    "expected_output": "'b'"
+                    "expected_output": [
+                        "'b'"
+                    ]
                 }
             ]
         },
@@ -1322,14 +1432,18 @@
                         "text": "'abcabcbb'",
                         "k": "k = 3"
                     },
-                    "expected_output": "'abc'"
+                    "expected_output": [
+                        "'abc'"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "'bbbbb'",
                         "k": "k = 3"
                     },
-                    "expected_output": "''"
+                    "expected_output": [
+                        "''"
+                    ]
                 }
             ]
         },
@@ -1375,13 +1489,17 @@
                     "parameters": {
                         "text": "'babad'"
                     },
-                    "expected_output": "'bab'"
+                    "expected_output": [
+                        "'bab'"
+                    ]
                 },
                 {
                     "parameters": {
                         "text": "'cbbd'"
                     },
-                    "expected_output": "'bb'"
+                    "expected_output": [
+                        "'bb'"
+                    ]
                 }
             ]
         },
@@ -1432,14 +1550,18 @@
                         "text1": "'abcde'",
                         "text2": "'bcde'"
                     },
-                    "expected_output": "'bcde'"
+                    "expected_output": [
+                        "'bcde'"
+                    ]
                 },
                 {
                     "parameters": {
                         "text1": "'abcdef'",
                         "text2": "'abef'"
                     },
-                    "expected_output": "'abe'"
+                    "expected_output": [
+                        "'abe'"
+                    ]
                 }
             ]
         }

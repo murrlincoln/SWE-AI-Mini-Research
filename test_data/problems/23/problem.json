@@ -39,14 +39,18 @@
     ],
     "test_cases": [
         {
-            "expected_output": "'abc'",
+            "expected_output": [
+                "'abc'"
+            ],
             "parameters": {
                 "k": "k = 3",
                 "text": "'abcabcbb'"
             }
         },
         {
-            "expected_output": "''",
+            "expected_output": [
+                "''"
+            ],
             "parameters": {
                 "k": "k = 3",
                 "text": "'bbbbb'"

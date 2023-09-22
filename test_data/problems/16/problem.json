@@ -35,19 +35,25 @@
     ],
     "test_cases": [
         {
-            "expected_output": "''",
+            "expected_output": [
+                "''"
+            ],
             "parameters": {
                 "text": "text = ''"
             }
         },
         {
-            "expected_output": "'a'",
+            "expected_output": [
+                "'a'"
+            ],
             "parameters": {
                 "text": "text = 'a'"
             }
         },
         {
-            "expected_output": "'cba'",
+            "expected_output": [
+                "'cba'"
+            ],
             "parameters": {
                 "text": "text = 'abc'"
             }

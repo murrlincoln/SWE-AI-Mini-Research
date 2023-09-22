@@ -35,19 +35,25 @@
     ],
     "test_cases": [
         {
-            "expected_output": "''",
+            "expected_output": [
+                "''"
+            ],
             "parameters": {
                 "sentence": "sentence = ''"
             }
         },
         {
-            "expected_output": "'hi'",
+            "expected_output": [
+                "'hi'"
+            ],
             "parameters": {
                 "sentence": "sentence = 'hi'"
             }
         },
         {
-            "expected_output": "'hello'",
+            "expected_output": [
+                "'hello'"
+            ],
             "parameters": {
                 "sentence": "sentence = 'hello there my friend'"
             }

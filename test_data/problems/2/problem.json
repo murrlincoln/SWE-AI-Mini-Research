@@ -41,7 +41,9 @@
             }
         },
         {
-            "expected_output": "1",
+            "expected_output": [
+                "1"
+            ],
             "parameters": {
                 "ll": "1"
             }
