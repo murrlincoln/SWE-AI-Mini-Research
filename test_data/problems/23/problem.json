@@ -1,5 +1,23 @@
 {
     "description": "This problem tests the ability to work with hash maps. The task is to implement a function that finds the longest substring with k distinct characters in a given string.",
+    "function_prototype": {
+        "function_name": "longest_substring_with_k_distinct_characters",
+        "parameters": [
+            {
+                "name": "text",
+                "type": "str"
+            },
+            {
+                "name": "k",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
     "problem_id": "longest_substring_with_k_distinct_characters",
     "prompts": [
         {

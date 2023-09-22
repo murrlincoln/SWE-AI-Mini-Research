@@ -1,5 +1,19 @@
 {
     "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the nth Fibonacci number using recursion.",
+    "function_signature": {
+        "function_name": "fibonacci",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
     "problem_id": "fibonacci_recursive",
     "prompts": [
         {

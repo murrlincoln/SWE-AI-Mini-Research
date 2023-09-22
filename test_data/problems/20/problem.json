@@ -1,5 +1,19 @@
 {
     "category": "Logic",
+    "function_prototype": {
+        "function_name": "fizzbuzz",
+        "parameters": [
+            {
+                "name": "num",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
     "problem_id": "fizzbuzz",
     "prompts": [
         {

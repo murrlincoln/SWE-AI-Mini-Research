@@ -3,6 +3,20 @@
         {
             "problem_id": "sort_even_numbers_in_array",
             "description": "This problem tests the ability to work with arrays and sorting algorithms. The task is to implement a function that takes an array of integers and sorts the even numbers in ascending order, while leaving the odd numbers in their original positions.",
+            "function_signature": {
+                "function_name": "sort_even_numbers",
+                "parameters": [
+                    {
+                        "name": "arr",
+                        "type": "List[int]"
+                    }
+                ],
+                "return_values": [
+                    {
+                        "type": "List[int]"
+                    }
+                ]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -27,6 +41,11 @@
         {
             "problem_id": "reverse_vowels_in_string",
             "description": "This problem tests the ability to manipulate strings. The task is to implement a function that reverses the vowels in a given string.",
+            "function_signature": {
+                "function_name": "reverse_vowels",
+                "parameters": [{"name": "s", "type": "str"}],
+                "return_values": [{"type": "str"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -42,7 +61,7 @@
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "Write a Python function to pass the following tests: def test_generic_2():\n  assert function('hello') == 'holle'\n  assert function('world') == 'world'"
+                    "content": "Write a Python function to pass the following tests: def test_generic_1():\n  assert function('hello') == 'holle'\n  assert function('world') == 'world'"
                 }
             ],
             "id": "1",
@@ -51,6 +70,11 @@
         {
             "problem_id": "reverse_singly_linked_list",
             "description": "This problem tests the ability to manipulate data structures, specifically linked lists. The task is to implement a function that reverses a singly linked list.",
+            "function_signature": {
+                "function_name": "reverse_linked_list",
+                "parameters": [{"name": "ll", "type": "List[int]"}],
+                "return_values": [{"type": "List[int]"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -66,7 +90,7 @@
                 },
                 {
                     "type": "prompt_generic_tests",
-                    "content": "Write a Python function to pass the following tests: def test_generic_reverse_linked_list():\n  assert function([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert function([1]) == [1]"
+                    "content": "Write a Python function to pass the following tests: def test_generic_2():\n  assert function([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert function([1]) == [1]"
                 }
             ],
             "id": "2",
@@ -75,6 +99,11 @@
         {
             "problem_id": "fibonacci_recursive",
             "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the nth Fibonacci number using recursion.",
+            "function_signature": {
+                "function_name": "fibonacci",
+                "parameters": [{"name": "n", "type": "int"}],
+                "return_values": [{"type": "int"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -99,6 +128,11 @@
         {
             "problem_id": "max_product_of_two_integers",
             "description": "This problem tests the ability to work with basic algorithms. The task is to find the maximum product of any two integers in a given list.",
+            "function_signature": {
+                "function_name": "max_product",
+                "parameters": [{"name": "nums", "type": "List[int]"}],
+                "return_values": [{"type": "int"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -123,6 +157,12 @@
         {
             "problem_id": "check_if_binary_tree_is_balanced",
             "description": "This problem tests the ability to work with tree data structures. The task is to implement a function that checks if a binary tree is balanced.",
+            "function_signature": {
+                "function_name": "is_balanced",
+                "parameters": [{"name": "tree", "type": "TreeNode"}], 
+                "return_values": [{"type": "bool"}]
+            },
+            "input_code": "class TreeNode:\ndef __init__(self, val=0, left=None, right=None):\n                self.val = val\n                self.left = left\n                self.right = right\n",
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -147,6 +187,11 @@
         {
             "problem_id": "validate_email_address",
             "description": "This problem tests the ability to work with string manipulation and regular expressions. The task is to implement a function that validates an email address according to certain rules.",
+            "function_signature": {
+                "function_name": "validate_email",
+                "parameters": [{"name": "email", "type": "str"}],
+                "return_values": [{"type": "bool"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -171,6 +216,14 @@
         {
             "problem_id": "range_bitwise_and",
             "description": "This problem tests the ability to work with bitwise operations. The task is to implement a function that calculates the bitwise AND of all numbers in a range from m to n.",
+            "function_signature": {
+                "function_name": "range_bitwise_and",
+                "parameters": [
+                    {"name": "m", "type": "int"},
+                    {"name": "n", "type": "int"}
+                ],
+                "return_values": [{"type": "int"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -195,6 +248,13 @@
         {
             "problem_id": "bubble_sort_array",
             "description": "This problem tests the ability to work with arrays and sorting. The task is to implement a function that sorts an array using the bubble sort algorithm.",
+            "function_signature": {
+                "function_name": "bubble_sort",
+                "parameters": [
+                    {"name": "arr", "type": "List[int]"}
+                ],
+                "return_values": [{"type": "List[int]"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -219,6 +279,14 @@
         {
             "problem_id": "depth_first_search",
             "description": "This problem tests the ability to work with graphs. The task is to implement a function that performs a depth-first search on a graph represented as an adjacency list.",
+            "function_signature": {
+                "function_name": "depth_first_search",
+                "parameters": [
+                    {"name": "graph", "type": "Dict[int, List[int]]"},
+                    {"name": "start", "type": "int"}
+                ],
+                "return_values": [{"type": "List[int]"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -243,6 +311,13 @@
         {
             "problem_id": "factorial_recursive_2",
             "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the factorial of a given number using recursion.",
+            "function_signature": {
+                "function_name": "factorial_recursive_2",
+                "parameters": [
+                    {"name": "n", "type": "int"}
+                ],
+                "return_values": [{"type": "int"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -269,6 +344,13 @@
             "problem_id": "multiply_list",
             "model": "Claude-2",
             "id": "11",
+            "function_signature": {
+                "function_name": "multiply_list",
+                "parameters": [
+                    {"name": "nums", "type": "list"}
+                ],
+                "return_values": [{"type": "int"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -294,6 +376,13 @@
             "problem_id": "count_vowels",
             "model": "Claude-2",
             "id": "12",
+            "function_signature": {
+                "function_name": "count_vowels",
+                "parameters": [
+                    {"name": "text", "type": "str"}
+                ],
+                "return_values": [{"type": "int"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -319,6 +408,13 @@
             "problem_id": "is_palindrome",
             "id": "13",
             "model": "Claude-2",
+            "function_signature": {
+                "function_name": "is_palindrome",
+                "parameters": [
+                    {"name": "text", "type": "str"}
+                ],
+                "return_values": [{"type": "bool"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -343,6 +439,13 @@
             "problem_id": "longest_word",
             "id": "14",
             "model": "Claude-2",
+            "function_signature": {
+                "function_name": "longest_word",
+                "parameters": [
+                    {"name": "sentence", "type": "str"}
+                ],
+                "return_values": [{"type": "str"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -368,6 +471,13 @@
             "problem_id": "capitalize",
             "id": "15",
             "model": "Claude-2",
+            "function_signature": {
+                "function_name": "capitalize",
+                "parameters": [
+                    {"name": "text", "type": "str"}
+                ],
+                "return_values": [{"type": "str"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -392,6 +502,13 @@
             "problem_id": "reverse_string",
             "id": "16",
             "model": "Claude-2",
+            "function_signature": {
+                "function_name": "reverse_string",
+                "parameters": [
+                    {"name": "text", "type": "str"}
+                ],
+                "return_values": [{"type": "str"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -416,6 +533,13 @@
             "problem_id": "count_digits",
             "id": "17",
             "model": "Claude-2",
+            "function_signature": {
+                "function_name": "count_digits",
+                "parameters": [
+                    {"name": "num", "type": "int"}
+                ],
+                "return_values": [{"type": "int"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -440,6 +564,13 @@
             "problem_id": "factorial",
             "id": "18",
             "model": "Claude-2",
+            "function_signature": {
+                "function_name": "factorial",
+                "parameters": [
+                    {"name": "num", "type": "int"}
+                ],
+                "return_values": [{"type": "int"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -464,6 +595,13 @@
             "problem_id": "fibonacci",
             "id": "19",
             "model": "Claude-2",
+            "function siganture": {
+                "function_name": "fibonacci",
+                "parameters": [
+                    {"name": "num", "type": "int"}
+                ],
+                "return_values": [{"type": "list"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -488,6 +626,13 @@
             "problem_id": "fizzbuzz",
             "id": "20",
             "model": "Claude-2",
+            "function_prototype": {
+                "function_name": "fizzbuzz",
+                "parameters": [
+                    {"name": "num", "type": "int"}
+                ],
+                "return_values": [{"type": "str"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -512,6 +657,13 @@
             "model": "Bard",
             "id": "21",
             "description": "This problem tests the ability to work with hash tables. The task is to implement a function that finds the first non-repeating character in a given string.",
+            "function_prototype": {
+                "function_name": "find_first_non_repeating_char",
+                "parameters": [
+                    {"name": "text", "type": "str"}
+                ],
+                "return_values": [{"type": "str"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -536,6 +688,13 @@
             "model": "Bard",
             "id": "22",
             "description": "This problem tests the ability to work with hash sets. The task is to implement a function that finds the longest substring without repeating characters in a given string.",
+            "function_prototype": {
+                "function_name": "find_longest_substring_without_repeating_characters",
+                "parameters": [
+                    {"name": "text", "type": "str"}
+                ],
+                "return_values": [{"type": "str"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -560,6 +719,14 @@
             "model": "Bard",
             "id": "23",
             "description": "This problem tests the ability to work with hash maps. The task is to implement a function that finds the longest substring with k distinct characters in a given string.",
+            "function_prototype": {
+                "function_name": "longest_substring_with_k_distinct_characters",
+                "parameters": [
+                    {"name": "text", "type": "str"},
+                    {"name": "k", "type": "int"}
+                ],
+                "return_values": [{"type": "str"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -584,6 +751,13 @@
             "model": "Bard",
             "id": "24",
             "description": "This problem tests the ability to work with dynamic programming. The task is to implement a function that finds the longest palindromic substring in a given string.",
+            "function_prototype": {
+                "function_name": "longest_palindromic_substring",
+                "parameters": [
+                    {"name": "text", "type": "str"}
+                ],
+                "return_values": [{"type": "str"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",
@@ -608,6 +782,14 @@
             "model": "Bard",
             "id": "25",
             "description": "This problem tests the ability to work with dynamic programming. The task is to implement a function that finds the longest common substring between two strings.",
+            "function_prototype": {
+                "function_name": "longest_common_substring",
+                "parameters": [
+                    {"name": "text1", "type": "str"},
+                    {"name": "text2", "type": "str"}
+                ],
+                "return_values": [{"type": "str"}]
+            },
             "prompts": [
                 {
                     "type": "prompt_only",

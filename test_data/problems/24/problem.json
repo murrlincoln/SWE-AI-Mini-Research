@@ -1,5 +1,19 @@
 {
     "description": "This problem tests the ability to work with dynamic programming. The task is to implement a function that finds the longest palindromic substring in a given string.",
+    "function_prototype": {
+        "function_name": "longest_palindromic_substring",
+        "parameters": [
+            {
+                "name": "text",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
     "problem_id": "longest_palindromic_substring",
     "prompts": [
         {

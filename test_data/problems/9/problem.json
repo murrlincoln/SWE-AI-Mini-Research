@@ -1,5 +1,23 @@
 {
     "description": "This problem tests the ability to work with graphs. The task is to implement a function that performs a depth-first search on a graph represented as an adjacency list.",
+    "function_signature": {
+        "function_name": "depth_first_search",
+        "parameters": [
+            {
+                "name": "graph",
+                "type": "Dict[int, List[int]]"
+            },
+            {
+                "name": "start",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[int]"
+            }
+        ]
+    },
     "problem_id": "depth_first_search",
     "prompts": [
         {

@@ -1,5 +1,19 @@
 {
     "description": "This problem tests the ability to work with basic algorithms. The task is to find the maximum product of any two integers in a given list.",
+    "function_signature": {
+        "function_name": "max_product",
+        "parameters": [
+            {
+                "name": "nums",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
     "problem_id": "max_product_of_two_integers",
     "prompts": [
         {

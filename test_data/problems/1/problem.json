@@ -1,5 +1,19 @@
 {
     "description": "This problem tests the ability to manipulate strings. The task is to implement a function that reverses the vowels in a given string.",
+    "function_signature": {
+        "function_name": "reverse_vowels",
+        "parameters": [
+            {
+                "name": "s",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
     "problem_id": "reverse_vowels_in_string",
     "prompts": [
         {
@@ -15,7 +29,7 @@
             "type": "prompt_tests_only"
         },
         {
-            "content": "Write a Python function to pass the following tests: def test_generic_2():\n  assert function('hello') == 'holle'\n  assert function('world') == 'world'",
+            "content": "Write a Python function to pass the following tests: def test_generic_1():\n  assert function('hello') == 'holle'\n  assert function('world') == 'world'",
             "type": "prompt_generic_tests"
         }
     ]

@@ -1,5 +1,23 @@
 {
     "description": "This problem tests the ability to work with bitwise operations. The task is to implement a function that calculates the bitwise AND of all numbers in a range from m to n.",
+    "function_signature": {
+        "function_name": "range_bitwise_and",
+        "parameters": [
+            {
+                "name": "m",
+                "type": "int"
+            },
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
     "problem_id": "range_bitwise_and",
     "prompts": [
         {

@@ -1,5 +1,19 @@
 {
     "category": "String",
+    "function_signature": {
+        "function_name": "is_palindrome",
+        "parameters": [
+            {
+                "name": "text",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "bool"
+            }
+        ]
+    },
     "problem_id": "is_palindrome",
     "prompts": [
         {

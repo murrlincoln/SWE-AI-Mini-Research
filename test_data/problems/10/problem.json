@@ -1,5 +1,19 @@
 {
     "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the factorial of a given number using recursion.",
+    "function_signature": {
+        "function_name": "factorial_recursive_2",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
     "problem_id": "factorial_recursive_2",
     "prompts": [
         {

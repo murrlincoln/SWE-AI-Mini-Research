@@ -1,5 +1,19 @@
 {
     "description": "This problem tests the ability to work with hash tables. The task is to implement a function that finds the first non-repeating character in a given string.",
+    "function_prototype": {
+        "function_name": "find_first_non_repeating_char",
+        "parameters": [
+            {
+                "name": "text",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
     "problem_id": "find_first_non_repeating_char",
     "prompts": [
         {

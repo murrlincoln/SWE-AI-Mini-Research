@@ -1,5 +1,19 @@
 {
     "category": "Math",
+    "function_signature": {
+        "function_name": "factorial",
+        "parameters": [
+            {
+                "name": "num",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
     "problem_id": "factorial",
     "prompts": [
         {

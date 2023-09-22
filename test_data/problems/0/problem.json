@@ -1,5 +1,19 @@
 {
     "description": "This problem tests the ability to work with arrays and sorting algorithms. The task is to implement a function that takes an array of integers and sorts the even numbers in ascending order, while leaving the odd numbers in their original positions.",
+    "function_signature": {
+        "function_name": "sort_even_numbers",
+        "parameters": [
+            {
+                "name": "arr",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[int]"
+            }
+        ]
+    },
     "problem_id": "sort_even_numbers_in_array",
     "prompts": [
         {

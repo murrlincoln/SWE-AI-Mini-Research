@@ -1,5 +1,19 @@
 {
     "category": "Math",
+    "function siganture": {
+        "function_name": "fibonacci",
+        "parameters": [
+            {
+                "name": "num",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "list"
+            }
+        ]
+    },
     "problem_id": "fibonacci",
     "prompts": [
         {

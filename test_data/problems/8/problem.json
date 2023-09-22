@@ -1,5 +1,19 @@
 {
     "description": "This problem tests the ability to work with arrays and sorting. The task is to implement a function that sorts an array using the bubble sort algorithm.",
+    "function_signature": {
+        "function_name": "bubble_sort",
+        "parameters": [
+            {
+                "name": "arr",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "List[int]"
+            }
+        ]
+    },
     "problem_id": "bubble_sort_array",
     "prompts": [
         {

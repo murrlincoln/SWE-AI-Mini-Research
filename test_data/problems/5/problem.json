@@ -1,5 +1,20 @@
 {
     "description": "This problem tests the ability to work with tree data structures. The task is to implement a function that checks if a binary tree is balanced.",
+    "function_signature": {
+        "function_name": "is_balanced",
+        "parameters": [
+            {
+                "name": "tree",
+                "type": "TreeNode"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "bool"
+            }
+        ]
+    },
+    "input_code": "class TreeNode:\ndef __init__(self, val=0, left=None, right=None):\n                self.val = val\n                self.left = left\n                self.right = right\n",
     "problem_id": "check_if_binary_tree_is_balanced",
     "prompts": [
         {

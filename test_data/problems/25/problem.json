@@ -1,5 +1,23 @@
 {
     "description": "This problem tests the ability to work with dynamic programming. The task is to implement a function that finds the longest common substring between two strings.",
+    "function_prototype": {
+        "function_name": "longest_common_substring",
+        "parameters": [
+            {
+                "name": "text1",
+                "type": "str"
+            },
+            {
+                "name": "text2",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
     "problem_id": "longest_common_substring",
     "prompts": [
         {

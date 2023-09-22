@@ -1,5 +1,19 @@
 {
     "category": "Math",
+    "function_signature": {
+        "function_name": "multiply_list",
+        "parameters": [
+            {
+                "name": "nums",
+                "type": "list"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
     "problem_id": "multiply_list",
     "prompts": [
         {

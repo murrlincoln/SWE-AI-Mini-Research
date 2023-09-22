@@ -1,5 +1,19 @@
 {
     "description": "This problem tests the ability to work with string manipulation and regular expressions. The task is to implement a function that validates an email address according to certain rules.",
+    "function_signature": {
+        "function_name": "validate_email",
+        "parameters": [
+            {
+                "name": "email",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "bool"
+            }
+        ]
+    },
     "problem_id": "validate_email_address",
     "prompts": [
         {

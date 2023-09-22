@@ -1,5 +1,19 @@
 {
     "category": "String",
+    "function_signature": {
+        "function_name": "longest_word",
+        "parameters": [
+            {
+                "name": "sentence",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    },
     "problem_id": "longest_word",
     "prompts": [
         {
