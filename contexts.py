@@ -29,10 +29,10 @@ class FunctionPrototype:
 		elif param_type == "float":
 			return float(input)
 		elif param_type == "str":
-			print('Returning ' + input)
 			return ast.literal_eval(input)
+		elif param_type == "bool":
+			return input.lower() == "true"
 		elif '[' in param_type:
-			print(input)
 			# Using ast.literal_eval to safely evaluate the string representation
 			return ast.literal_eval(input)
 		
@@ -40,9 +40,7 @@ class FunctionPrototype:
 		converted_params = {}
 		
 		for param in self.parameters:
-			print(f"Param: {param} test case: {test_case}")
 			converted_params[param.name] = self.get_python_type(param.type, test_case["parameters"][param.name])
-		print(f'Converted parameters: {converted_params}')
 		return converted_params
 		
 	def get_ordered_parameter_values(self, test_case) -> List[str]:
@@ -67,8 +65,6 @@ class FunctionPrototype:
 			return converted_retvals[0]
 		elif len(converted_retvals) > 1:
 			return tuple(converted_retvals)
-		else:
-			return None	
 
 class Parameter:
 	def __init__(self, data):
