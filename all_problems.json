@@ -96,18 +96,18 @@
             "test_cases": [
                 {
                     "parameters": {
-                        "s": "hello"
+                        "s": "'hello'"
                     },
                     "expected_output": [
-                        "holle"
+                        "'holle'"
                     ]
                 },
                 {
                     "parameters": {
-                        "s": "world"
+                        "s": "'world'"
                     },
                     "expected_output": [
-                        "world"
+                        "'world'"
                     ]
                 }
             ]
@@ -647,7 +647,7 @@
                 "parameters": [
                     {
                         "name": "nums",
-                        "type": "list"
+                        "type": "List[int]"
                     }
                 ],
                 "return_values": [
@@ -677,7 +677,7 @@
             "test_cases": [
                 {
                     "parameters": {
-                        "nums": "nums = []"
+                        "nums": "[]"
                     },
                     "expected_output": [
                         "1"
@@ -685,7 +685,7 @@
                 },
                 {
                     "parameters": {
-                        "nums": "nums = [2]"
+                        "nums": "[2]"
                     },
                     "expected_output": [
                         "2"
@@ -693,7 +693,7 @@
                 },
                 {
                     "parameters": {
-                        "nums": "nums = [1"
+                        "nums": "[1, 2, 3]"
                     },
                     "expected_output": [
                         "6"
@@ -741,7 +741,7 @@
             "test_cases": [
                 {
                     "parameters": {
-                        "text": "text = ''"
+                        "text": "''"
                     },
                     "expected_output": [
                         "0"
@@ -749,7 +749,7 @@
                 },
                 {
                     "parameters": {
-                        "text": "text = 'try'"
+                        "text": "'try'"
                     },
                     "expected_output": [
                         "0"
@@ -757,7 +757,7 @@
                 },
                 {
                     "parameters": {
-                        "text": "text = 'apple'"
+                        "text": "'apple'"
                     },
                     "expected_output": [
                         "2"
@@ -805,7 +805,7 @@
             "test_cases": [
                 {
                     "parameters": {
-                        "text": "text = ''"
+                        "text": "''"
                     },
                     "expected_output": [
                         "True"
@@ -813,7 +813,7 @@
                 },
                 {
                     "parameters": {
-                        "text": "text = 'hello'"
+                        "text": "'hello'"
                     },
                     "expected_output": [
                         "False"
@@ -821,7 +821,7 @@
                 },
                 {
                     "parameters": {
-                        "text": "text = 'racecar'"
+                        "text": "'racecar'"
                     },
                     "expected_output": [
                         "True"
@@ -869,7 +869,7 @@
             "test_cases": [
                 {
                     "parameters": {
-                        "sentence": "sentence = ''"
+                        "sentence": "''"
                     },
                     "expected_output": [
                         "''"
@@ -877,7 +877,7 @@
                 },
                 {
                     "parameters": {
-                        "sentence": "sentence = 'hi'"
+                        "sentence": "'hi'"
                     },
                     "expected_output": [
                         "'hi'"
@@ -885,7 +885,7 @@
                 },
                 {
                     "parameters": {
-                        "sentence": "sentence = 'hello there my friend'"
+                        "sentence": "'hello there my friend'"
                     },
                     "expected_output": [
                         "'hello'"
@@ -933,7 +933,7 @@
             "test_cases": [
                 {
                     "parameters": {
-                        "text": "text = ''"
+                        "text": "''"
                     },
                     "expected_output": [
                         "''"
@@ -941,7 +941,7 @@
                 },
                 {
                     "parameters": {
-                        "text": "text = 'hello'"
+                        "text": "'hello'"
                     },
                     "expected_output": [
                         "'Hello'"
@@ -949,7 +949,7 @@
                 },
                 {
                     "parameters": {
-                        "text": "text = 'hello world'"
+                        "text": "'hello world'"
                     },
                     "expected_output": [
                         "'Hello World'"
@@ -997,7 +997,7 @@
             "test_cases": [
                 {
                     "parameters": {
-                        "text": "text = ''"
+                        "text": "''"
                     },
                     "expected_output": [
                         "''"
@@ -1005,7 +1005,7 @@
                 },
                 {
                     "parameters": {
-                        "text": "text = 'a'"
+                        "text": "'a'"
                     },
                     "expected_output": [
                         "'a'"
@@ -1013,7 +1013,7 @@
                 },
                 {
                     "parameters": {
-                        "text": "text = 'abc'"
+                        "text": "'abc'"
                     },
                     "expected_output": [
                         "'cba'"
@@ -1164,7 +1164,7 @@
                 ],
                 "return_values": [
                     {
-                        "type": "list"
+                        "type": "List[int]"
                     }
                 ]
             },

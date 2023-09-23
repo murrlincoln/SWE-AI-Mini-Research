@@ -28,8 +28,9 @@ class FunctionPrototype:
 			return int(input)
 		elif param_type == "float":
 			return float(input)
-		# elif param_type == "str":
-		# 	return input
+		elif param_type == "str":
+			print('Returning ' + input)
+			return ast.literal_eval(input)
 		elif '[' in param_type:
 			print(input)
 			# Using ast.literal_eval to safely evaluate the string representation

@@ -10,7 +10,7 @@
         ],
         "return_values": [
             {
-                "type": "list"
+                "type": "List[int]"
             }
         ]
     },

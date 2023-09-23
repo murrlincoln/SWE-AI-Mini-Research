@@ -39,7 +39,7 @@
                 "''"
             ],
             "parameters": {
-                "text": "text = ''"
+                "text": "''"
             }
         },
         {
@@ -47,7 +47,7 @@
                 "'a'"
             ],
             "parameters": {
-                "text": "text = 'a'"
+                "text": "'a'"
             }
         },
         {
@@ -55,7 +55,7 @@
                 "'cba'"
             ],
             "parameters": {
-                "text": "text = 'abc'"
+                "text": "'abc'"
             }
         }
     ]

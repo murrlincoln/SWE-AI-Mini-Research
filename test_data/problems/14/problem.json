@@ -39,7 +39,7 @@
                 "''"
             ],
             "parameters": {
-                "sentence": "sentence = ''"
+                "sentence": "''"
             }
         },
         {
@@ -47,7 +47,7 @@
                 "'hi'"
             ],
             "parameters": {
-                "sentence": "sentence = 'hi'"
+                "sentence": "'hi'"
             }
         },
         {
@@ -55,7 +55,7 @@
                 "'hello'"
             ],
             "parameters": {
-                "sentence": "sentence = 'hello there my friend'"
+                "sentence": "'hello there my friend'"
             }
         }
     ]

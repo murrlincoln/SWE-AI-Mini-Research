@@ -39,7 +39,7 @@
                 "0"
             ],
             "parameters": {
-                "text": "text = ''"
+                "text": "''"
             }
         },
         {
@@ -47,7 +47,7 @@
                 "0"
             ],
             "parameters": {
-                "text": "text = 'try'"
+                "text": "'try'"
             }
         },
         {
@@ -55,7 +55,7 @@
                 "2"
             ],
             "parameters": {
-                "text": "text = 'apple'"
+                "text": "'apple'"
             }
         }
     ]

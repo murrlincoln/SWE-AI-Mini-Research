@@ -5,7 +5,7 @@
         "parameters": [
             {
                 "name": "nums",
-                "type": "list"
+                "type": "List[int]"
             }
         ],
         "return_values": [
@@ -39,7 +39,7 @@
                 "1"
             ],
             "parameters": {
-                "nums": "nums = []"
+                "nums": "[]"
             }
         },
         {
@@ -47,7 +47,7 @@
                 "2"
             ],
             "parameters": {
-                "nums": "nums = [2]"
+                "nums": "[2]"
             }
         },
         {
@@ -55,7 +55,7 @@
                 "6"
             ],
             "parameters": {
-                "nums": "nums = [1"
+                "nums": "[1, 2, 3]"
             }
         }
     ]

@@ -39,7 +39,7 @@
                 "''"
             ],
             "parameters": {
-                "text": "text = ''"
+                "text": "''"
             }
         },
         {
@@ -47,7 +47,7 @@
                 "'Hello'"
             ],
             "parameters": {
-                "text": "text = 'hello'"
+                "text": "'hello'"
             }
         },
         {
@@ -55,7 +55,7 @@
                 "'Hello World'"
             ],
             "parameters": {
-                "text": "text = 'hello world'"
+                "text": "'hello world'"
             }
         }
     ]

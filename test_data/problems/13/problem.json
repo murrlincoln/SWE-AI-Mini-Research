@@ -39,7 +39,7 @@
                 "True"
             ],
             "parameters": {
-                "text": "text = ''"
+                "text": "''"
             }
         },
         {
@@ -47,7 +47,7 @@
                 "False"
             ],
             "parameters": {
-                "text": "text = 'hello'"
+                "text": "'hello'"
             }
         },
         {
@@ -55,7 +55,7 @@
                 "True"
             ],
             "parameters": {
-                "text": "text = 'racecar'"
+                "text": "'racecar'"
             }
         }
     ]

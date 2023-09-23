@@ -39,7 +39,7 @@ def execute_function(function_code, parameters):
 		print(f"Parameters: {parameters}")
 		traceback.print_exc(limit=None, file=None, chain=True)
 		print(f"Function code:\n\n{function_code}")
-		# input("Press Enter to continue…")
+		input("Press Enter to continue…")
 
 def test_solution_run(problemContext, runContext):
 	generated_path = runContext.generatedPath()
