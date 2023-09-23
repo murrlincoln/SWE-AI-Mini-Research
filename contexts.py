@@ -1,7 +1,7 @@
 import os
 import json
 import ast
-from typing import Dict, Any
+from typing import Dict, List, Any
 
 class FunctionPrototype:
 	def __init__(self, data):
@@ -28,6 +28,8 @@ class FunctionPrototype:
 			return int(input)
 		elif param_type == "float":
 			return float(input)
+		# elif param_type == "str":
+		# 	return input
 		elif param_type.startswith("List[int]"):
 			print(input)
 			# Using ast.literal_eval to safely evaluate the string representation
@@ -37,9 +39,19 @@ class FunctionPrototype:
 		converted_params = {}
 		
 		for param in self.parameters:
+			print(f"Param: {param} test case: {test_case}")
 			converted_params[param.name] = self.get_python_type(param.type, test_case["parameters"][param.name])
 		
 		return converted_params
+		
+	def get_ordered_parameter_values(self, test_case) -> List[str]:
+		ordered_parameters = []
+		
+		parameter_values = self.get_parameter_values(test_case)
+		
+		for p in self.parameters:
+			ordered_parameters.append(parameter_values[p.name])
+		return ordered_parameters
 		
 	def get_return_values(self, test_case: Dict[str, str]) -> Dict[str, Any]:
 		converted_retvals = []

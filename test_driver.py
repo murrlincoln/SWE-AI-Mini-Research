@@ -2,6 +2,7 @@ import sys
 import os
 from contexts import ModelContext, FunctionPrototype
 from typing import *
+import traceback
 
 def add_line_numbers(text):
 	lines = text.split("\n")
@@ -23,16 +24,22 @@ def execute_function(function_code, parameters):
 	try:
 		# Dynamically define and execute the function
 		exec(function_code)
+		# exec(function_code, locals(),locals())
 		
 		# Get function name from the code (assuming the function name is the word after "def")
 		function_name = function_code.split("def")[1].split("(")[0].strip()
 		
 		# Call the function using extracted parameters
-		return eval(f"{function_name}(**parameters)")
+		function_args = ', '.join(map(repr, parameters))
+		return eval(f"{function_name}({function_args})")
 		
 		return result
 	except Exception as e:
 		print(f"An exception occurred: {e}")
+		print(f"Parameters: {parameters}")
+		traceback.print_exc(limit=None, file=None, chain=True)
+		print(f"Function code:\n\n{function_code}")
+		# input("Press Enter to continue…")
 
 def test_solution_run(problemContext, runContext):
 	generated_path = runContext.generatedPath()
@@ -48,7 +55,9 @@ def test_solution_run(problemContext, runContext):
 				solution_code = f.read()
 			print(add_line_numbers(solution_code))
 			for test_case in problemContext.testCases():
-				parameters = function_prototype.get_parameter_values(test_case)
+				
+				print(f"Regular params: {function_prototype.get_parameter_values(test_case)}, ordered params: {function_prototype.get_ordered_parameter_values(test_case)}")
+				parameters = function_prototype.get_ordered_parameter_values(test_case)
 				expected_output = function_prototype.get_return_values(test_case)
 				result = execute_function(solution_code, parameters)
 				

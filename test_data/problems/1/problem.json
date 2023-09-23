@@ -36,18 +36,18 @@
     "test_cases": [
         {
             "expected_output": [
-                "'holle'"
+                "holle"
             ],
             "parameters": {
-                "s": "'hello'"
+                "s": "hello"
             }
         },
         {
             "expected_output": [
-                "'world'"
+                "world"
             ],
             "parameters": {
-                "s": "'world'"
+                "s": "world"
             }
         }
     ]
