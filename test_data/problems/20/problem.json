@@ -39,7 +39,7 @@
                 "'Fizz'"
             ],
             "parameters": {
-                "num": "num = 3"
+                "num": "3"
             }
         },
         {
@@ -47,7 +47,7 @@
                 "'Buzz'"
             ],
             "parameters": {
-                "num": "num = 5"
+                "num": "5"
             }
         },
         {
@@ -55,7 +55,7 @@
                 "'FizzBuzz'"
             ],
             "parameters": {
-                "num": "num = 15"
+                "num": "15"
             }
         }
     ]

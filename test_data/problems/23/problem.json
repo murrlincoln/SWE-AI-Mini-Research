@@ -43,7 +43,7 @@
                 "'abc'"
             ],
             "parameters": {
-                "k": "k = 3",
+                "k": "3",
                 "text": "'abcabcbb'"
             }
         },
@@ -52,7 +52,7 @@
                 "''"
             ],
             "parameters": {
-                "k": "k = 3",
+                "k": "3",
                 "text": "'bbbbb'"
             }
         }

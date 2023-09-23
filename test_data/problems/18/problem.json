@@ -39,7 +39,7 @@
                 "1"
             ],
             "parameters": {
-                "num": "num = 0"
+                "num": "0"
             }
         },
         {
@@ -47,7 +47,7 @@
                 "1"
             ],
             "parameters": {
-                "num": "num = 1"
+                "num": "1"
             }
         },
         {
@@ -55,7 +55,7 @@
                 "120"
             ],
             "parameters": {
-                "num": "num = 5"
+                "num": "5"
             }
         }
     ]

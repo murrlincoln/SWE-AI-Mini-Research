@@ -33,8 +33,6 @@ def execute_function(function_code, parameters):
 		return result
 	except Exception as e:
 		print(f"An exception occurred: {e}")
-		print(f"Type: {type(e)}")
-		print(f"Args: {e.args}")
 
 def test_solution_run(problemContext, runContext):
 	generated_path = runContext.generatedPath()
@@ -44,7 +42,7 @@ def test_solution_run(problemContext, runContext):
 	total_tests = 0
 	
 	for solution_file in os.listdir(generated_path):
-		# print(f"***** {solution_file}:")
+		print(f"*****{problemContext.problemName()} - {solution_file}:")
 		if os.path.splitext(solution_file)[1] == '.py':
 			with open(os.path.join(generated_path, solution_file)) as f:
 				solution_code = f.read()
