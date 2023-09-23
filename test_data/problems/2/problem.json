@@ -35,17 +35,19 @@
     ],
     "test_cases": [
         {
-            "expected_output": "4 -> 3 -> 2 -> 1",
+            "expected_output": [
+                "[4, 3, 2, 1]"
+            ],
             "parameters": {
-                "ll": "1 -> 2 -> 3 -> 4"
+                "ll": "[1, 2, 3, 4]"
             }
         },
         {
             "expected_output": [
-                "1"
+                "[1]"
             ],
             "parameters": {
-                "ll": "1"
+                "ll": "[1]"
             }
         }
     ]

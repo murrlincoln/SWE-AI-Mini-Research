@@ -35,7 +35,9 @@
     ],
     "test_cases": [
         {
-            "expected_output": "0",
+            "expected_output": [
+                "0"
+            ],
             "parameters": {
                 "n": "0"
             }

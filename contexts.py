@@ -13,6 +13,14 @@ class FunctionPrototype:
 		params_str = ", ".join([str(p) for p in self.parameters])
 		return_values_str = ", ".join([str(r) for r in self.return_values])
 		return f"{self.function_name}({params_str}) -> {return_values_str}"
+		
+	def genericize(self):
+		generic_data = {
+			"function_name": "function",
+			"parameters": [{"name": chr(97 + i), "type": param.type} for i, param in enumerate(self.parameters)],
+			"return_values": [{"type": rv.type} for rv in self.return_values]
+		}
+		return FunctionPrototype(generic_data)
 	
 	def get_python_type(self, param_type, input):
 		# Based on the type, convert the string representation to the appropriate Python object
@@ -21,9 +29,10 @@ class FunctionPrototype:
 		elif param_type == "float":
 			return float(input)
 		elif param_type.startswith("List[int]"):
+			print(input)
 			# Using ast.literal_eval to safely evaluate the string representation
 			return ast.literal_eval(input)
-	
+		
 	def get_parameter_values(self, test_case: Dict[str, str]) -> Dict[str, Any]:
 		converted_params = {}
 		
@@ -31,7 +40,6 @@ class FunctionPrototype:
 			converted_params[param.name] = self.get_python_type(param.type, test_case["parameters"][param.name])
 		
 		return converted_params
-		
 		
 	def get_return_values(self, test_case: Dict[str, str]) -> Dict[str, Any]:
 		converted_retvals = []
@@ -48,9 +56,6 @@ class FunctionPrototype:
 			return tuple(converted_retvals)
 		else:
 			return None	
-
-
-
 
 class Parameter:
 	def __init__(self, data):
