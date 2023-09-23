@@ -1,0 +1,10 @@
+def factorial(num: int) -> int:
+    if num < 0:
+        raise ValueError("Factorial is not defined for negative numbers.")
+    elif num == 0:
+        return 1
+    else:
+        result = 1
+        for i in range(1, num + 1):
+            result *= i
+        return result
