@@ -1,0 +1,6 @@
+{
+    "name": "Prompt Specificity Benchmark",
+    "model": "openai-latest",
+    "run_score": "python3 test_driver.py",
+    "tags": ["any", "tags", "here"]
+}

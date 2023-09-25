@@ -1,5 +1,6 @@
 import unittest
 import main
+import json
 
 def linked_list_to_list(head):
     values = []
@@ -261,5 +262,33 @@ class TestCodingProblems(unittest.TestCase):
         self.assertEqual(main.longest_common_substring('abc', ''), '')
         self.assertEqual(main.longest_common_substring('', 'abc'), '')
 
+class JSONTestResult(unittest.TextTestResult):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.passed_tests = 0
+
+    def addSuccess(self, test):
+        super().addSuccess(test)
+        self.passed_tests += 1
+
+class JSONTestRunner(unittest.TextTestRunner):
+    resultclass = JSONTestResult
+
+def main_with_json_output():
+    runner = JSONTestRunner(verbosity=2)
+    suite = unittest.defaultTestLoader.loadTestsFromTestCase(TestCodingProblems)
+    result = runner.run(suite)
+    percentage_passed = (result.passed_tests / result.testsRun) * 100 if result.testsRun != 0 else 0
+
+
+    score = {
+        'score': percentage_passed,
+        'passed_tests': result.passed_tests,
+        'total_tests': result.testsRun
+    }
+
+    with open('output.json', 'w') as file:
+        json.dump(score, file)
+
 if __name__ == '__main__':
-    unittest.main()
+    main_with_json_output()
