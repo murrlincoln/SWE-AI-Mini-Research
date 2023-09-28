@@ -1,10 +1,14 @@
 {
-    "description": "This problem tests the ability to manipulate data structures, specifically linked lists. The task is to implement a function that reverses a singly linked list.",
+    "description": "This problem tests the ability to manipulate lists and sort elements. The task is to implement a function that merges two sorted lists into a single sorted list.",
     "function_prototype": {
-        "function_name": "reverse_linked_list",
+        "function_name": "merge_sorted_lists",
         "parameters": [
             {
-                "name": "ll",
+                "name": "list1",
+                "type": "List[int]"
+            },
+            {
+                "name": "list2",
                 "type": "List[int]"
             }
         ],
@@ -14,40 +18,42 @@
             }
         ]
     },
-    "problem_id": "reverse_singly_linked_list",
+    "problem_id": "merge_sorted_lists",
     "prompts": [
         {
-            "content": "Implement a function that reverses a singly linked list.",
+            "content": "Implement a function that merges two sorted lists into a single sorted list.",
             "type": "prompt_only"
         },
         {
-            "content": "Implement a function that reverses a singly linked list.\n\nTest Cases:\n- Input: 1 -> 2 -> 3 -> 4\n  Expected Output: 4 -> 3 -> 2 -> 1\n- Input: 1\n  Expected Output: 1",
+            "content": "Implement a function that merges two sorted lists into a single sorted list.\n\nTest Cases:\n- Input: [1, 3, 5], [2, 4, 6]\n  Expected Output: [1, 2, 3, 4, 5, 6]\n- Input: [7, 9], [8, 10]\n  Expected Output: [7, 8, 9, 10]",
             "type": "prompt_with_tests"
         },
         {
-            "content": "Write a Python function to pass the following tests: def test_reverse_linked_list():\n  assert reverse_linked_list([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert reverse_linked_list([1]) == [1]",
+            "content": "Write a Python function to pass the following tests: def test_merge_sorted_lists():\n  assert merge_sorted_lists([1, 3, 5], [2, 4, 6]) == [1, 2, 3, 4, 5, 6]\n  assert merge_sorted_lists([7, 9], [8, 10]) == [7, 8, 9, 10]",
             "type": "prompt_tests_only"
         },
         {
-            "content": "Write a Python function to pass the following tests: def test_generic_2():\n  assert function([1, 2, 3, 4]) == [4, 3, 2, 1]\n  assert function([1]) == [1]",
+            "content": "Write a Python function to pass the following tests: def test_generic_1():\n  assert function([1, 3, 5], [2, 4, 6]) == [1, 2, 3, 4, 5, 6]\n  assert function([7, 9], [8, 10]) == [7, 8, 9, 10]",
             "type": "prompt_generic_tests"
         }
     ],
     "test_cases": [
         {
             "expected_output": [
-                "[4, 3, 2, 1]"
+                "[1, 2, 3, 4, 5, 6]"
             ],
             "parameters": {
-                "ll": "[1, 2, 3, 4]"
+                "list1": "[1, 3, 5]",
+                "list2": "[2, 4, 6]"
             }
         },
         {
             "expected_output": [
-                "[1]"
+                "[7, 8, 9, 10]"
             ],
             "parameters": {
-                "ll": "[1]"
+                "list1": "[7, 9]",
+                "list2": "[8, 10]"
             }
         }
     ]

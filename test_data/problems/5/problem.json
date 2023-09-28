@@ -1,54 +1,59 @@
 {
-    "description": "This problem tests the ability to work with tree data structures. The task is to implement a function that checks if a binary tree is balanced.",
+    "description": "This problem tests the ability to search and count occurrences within strings. The task is to implement a function that counts the occurrences of a substring in a given string.",
     "function_prototype": {
-        "function_name": "is_balanced",
+        "function_name": "count_occurrences",
         "parameters": [
             {
-                "name": "tree",
-                "type": "TreeNode"
+                "name": "s",
+                "type": "str"
+            },
+            {
+                "name": "substr",
+                "type": "str"
             }
         ],
         "return_values": [
             {
-                "type": "bool"
+                "type": "int"
             }
         ]
     },
-    "input_code": "class TreeNode:\ndef __init__(self, val=0, left=None, right=None):\n                self.val = val\n                self.left = left\n                self.right = right\n",
-    "problem_id": "check_if_binary_tree_is_balanced",
+    "problem_id": "count_occurrences",
     "prompts": [
         {
-            "content": "Implement a function that checks if a binary tree is balanced.",
+            "content": "Implement a function that counts the occurrences of a substring in a given string.",
             "type": "prompt_only"
         },
         {
-            "content": "Implement a function that checks if a binary tree is balanced.\n\nTest Cases:\n- Input: Balanced Tree\n  Expected Output: True\n- Input: Unbalanced Tree\n  Expected Output: False",
+            "content": "Implement a function that counts the occurrences of a substring in a given string.\n\nTest Cases:\n- Input: 'hello world', 'o'\n  Expected Output: 2\n- Input: 'mississippi', 'is'\n  Expected Output: 2",
             "type": "prompt_with_tests"
         },
         {
-            "content": "Write a Python function to pass the following tests: def test_is_balanced():\n  assert is_balanced('Balanced Tree') == True\n  assert is_balanced('Unbalanced Tree') == False",
+            "content": "Write a Python function to pass the following tests: def test_count_occurrences():\n  assert count_occurrences('hello world', 'o') == 2\n  assert count_occurrences('mississippi', 'is') == 2",
             "type": "prompt_tests_only"
         },
         {
-            "content": "Write a Python function to pass the following tests: def test_generic_5():\n  assert function('Balanced Tree') == True\n  assert function('Unbalanced Tree') == False",
+            "content": "Write a Python function to pass the following tests: def test_generic_1():\n  assert function('hello world', 'o') == 2\n  assert function('mississippi', 'is') == 2",
             "type": "prompt_generic_tests"
         }
     ],
     "test_cases": [
         {
             "expected_output": [
-                "True"
+                "2"
             ],
             "parameters": {
-                "tree": "Balanced Tree"
+                "s": "'hello world'",
+                "substr": "'o'"
             }
         },
         {
             "expected_output": [
-                "False"
+                "2"
             ],
             "parameters": {
-                "tree": "Unbalanced Tree"
+                "s": "'mississippi'",
+                "substr": "'is'"
             }
         }
     ]
