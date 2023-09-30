@@ -22,6 +22,9 @@ def executor_script(function_code_file, parameters_file, result_file):
 		with open(parameters_file, 'r') as file:
 			parameters = json.load(file)
 		
+		# Add necessary imports
+		function_code = f"from typing import *\n\n{function_code}"
+		
 		# Execute the function code to define the function(s)
 		exec_globals = {}
 		exec(function_code, exec_globals)
