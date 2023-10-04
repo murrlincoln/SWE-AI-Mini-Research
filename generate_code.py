@@ -63,7 +63,7 @@ if __name__ == "__main__":
     
     # Check if the given folder path exists
     if os.path.exists(folder_path):
-        modelContext = ModelContext(model_name, folder_path)        
+        modelContext = ModelContext(llm, folder_path)        
         for problemContext in modelContext.GetProblemContexts():
             handle_problem(problemContext, querier, solutions_per_problem)
     else:
