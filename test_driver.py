@@ -138,14 +138,25 @@ def test_solution_run(problemContext, runContext):
 			
 	return test_results
 
+
+def get_args(arguments):
+    args = {}
+    for i, arg in enumerate(arguments):
+        if arg == "--MODEL" and i+1 < len(arguments):
+            args['model'] = arguments[i+1]
+    return args
+
 if __name__ == "__main__":
+	args = get_args(sys.argv)
 	# Check if the user has provided a command-line argument
-	if len(sys.argv) < 3:
+	if len(sys.argv) < 2:
 		print("Please provide correct arguments.")
 		sys.exit(1)
+
+
 		
 	folder_path = sys.argv[1]
-	model_name = sys.argv[2]
+	model_name = args['model']
 	print(f"{folder_path} {model_name}")
 	# Dictionary to aggregate test results across all solution files
 	aggregate_test_results = {}
