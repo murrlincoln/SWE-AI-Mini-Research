@@ -2,6 +2,9 @@ import subprocess
 import sys
 from abc import ABC, abstractmethod
 import openai
+import sys
+from llm_test_helpers import get_llm, get_args
+
 
 def copy_to_pasteboard(text: str) -> None:
 	"""
@@ -37,13 +40,14 @@ class OpenAIQuerier(Querier):
 	def performQuery(self, prompt):
 		prompt_content = f"{prompt}"
 		print(prompt_content)
+		response = self.__model.predict(prompt_content)
 		# Send the prompt to the OpenAI API
 		# This assumes that you have the OPENAI_API_KEY environment variable set
-		response = openai.Completion.create(
-			engine=self.__model,
-			prompt=prompt_content,
-			max_tokens=1000
-		)
+		# response = openai.Completion.create(
+		#	engine=self.__model,
+		#	prompt=prompt_content,
+		#	max_tokens=1000
+		# )
 		
 		# Extract and print the generated code
 		return response.choices[0].text.strip()

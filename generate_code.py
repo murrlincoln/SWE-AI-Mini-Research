@@ -3,6 +3,11 @@ import csv
 import sys
 from contexts import ModelContext, ProblemContext, RunContext
 from querier import HumanQuerier, OpenAIQuerier
+import sys
+from llm_test_helpers import get_llm, get_args
+
+args = get_args(sys.argv)
+llm = get_llm(args.model)
     
 def handle_problem(problemContext, querier, solutions_per_problem):
     for runContext in problemContext.GetRunContexts(solutions_per_problem):
@@ -43,7 +48,8 @@ if __name__ == "__main__":
     if querier_type == "human":
         querier = HumanQuerier()
     elif querier_type == "openai":
-        querier = OpenAIQuerier(model_name)
+        # todo: switch this to the LLM model compatible with the framework
+        querier = OpenAIQuerier(llm)
     else:
         print(f"Querier type {querier_type} unknown.")
         sys.exit(1)

@@ -69,9 +69,9 @@ def execute_function(function_code, parameters):
 			result_data = json.load(file)
 		
 		# Clean up temporary files
-		os.unlink(function_code_file.name)
-		os.unlink(parameters_file.name)
-		os.unlink(result_file.name)
+		# os.unlink(function_code_file.name)
+		# os.unlink(parameters_file.name)
+		# os.unlink(result_file.name)
 		
 		# Check for an error in the result data
 		if 'error' in result_data:
@@ -146,7 +146,7 @@ if __name__ == "__main__":
 		
 	folder_path = sys.argv[1]
 	model_name = sys.argv[2]
-	
+	print(f"{folder_path} {model_name}")
 	# Dictionary to aggregate test results across all solution files
 	aggregate_test_results = {}
 	
@@ -174,3 +174,15 @@ if __name__ == "__main__":
 		tests_passed += test_counts['tests_passed']
 		total_tests += test_counts['total_tests']
 	print(f"Overall: {tests_passed}/{total_tests}")
+
+	# CODE FOR COMPATABILITY WITH DAVID/NISALA/LINCOLN AUTOMATED GRADER/FRAMEWORK
+	# Might want to move it to a separate file where the framework can specify the model name and folder path
+	# Calculate the decimal value
+	if total_tests == 0:  # To avoid division by zero
+		decimal_value = 0
+	else:
+		decimal_value = tests_passed / total_tests
+
+	# Write the decimal value to output.json
+	with open('output.json', 'w') as outfile:
+		json.dump({'output': decimal_value * 100}, outfile)
