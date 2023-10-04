@@ -10,7 +10,7 @@ from llm_test_helpers import get_llm, get_args
 def get_args(arguments):
     args = {}
     for i, arg in enumerate(arguments):
-        if arg == "--MODEL" and i+1 < len(arguments):
+        if arg == "--model" and i+1 < len(arguments):
             args['model'] = arguments[i+1]
     return args
 
