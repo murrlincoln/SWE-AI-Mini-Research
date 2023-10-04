@@ -6,9 +6,17 @@ from querier import HumanQuerier, OpenAIQuerier
 import sys
 from llm_test_helpers import get_llm, get_args
 
+# Modify the get_args function to correctly parse the --MODEL argument
+def get_args(arguments):
+    args = {}
+    for i, arg in enumerate(arguments):
+        if arg == "--MODEL" and i+1 < len(arguments):
+            args['model'] = arguments[i+1]
+    return args
+
 args = get_args(sys.argv)
-llm = get_llm(args.model)
-    
+llm = get_llm(args['model'])  # Use the parsed model name
+
 def handle_problem(problemContext, querier, solutions_per_problem):
     for runContext in problemContext.GetRunContexts(solutions_per_problem):
         prompts = problemContext.prompts()
@@ -41,9 +49,8 @@ if __name__ == "__main__":
         sys.exit(1)
         
     folder_path = sys.argv[1]
-    model_name = sys.argv[2]
-    querier_type = sys.argv[3]
-    solutions_per_problem = int(sys.argv[4])
+    querier_type = sys.argv[2]
+    solutions_per_problem = int(sys.argv[3])
     
     if querier_type == "human":
         querier = HumanQuerier()
