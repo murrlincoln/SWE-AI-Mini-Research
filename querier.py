@@ -34,7 +34,7 @@ class HumanQuerier(Querier):
 
 class OpenAIQuerier(Querier):
 	def __init__(self, model):
-		self.__model = model
+		self.__model = get_llm(model)
 		pass
 		
 	def performQuery(self, prompt):
@@ -48,7 +48,10 @@ class OpenAIQuerier(Querier):
 		#	prompt=prompt_content,
 		#	max_tokens=1000
 		# )
+		with open('debug.txt', 'a') as f:
+			f.write(response + "Inside perform query\n")
 		
 		# Extract and print the generated code
-		return response.choices[0].text.strip()
+		return response.replace("```python", "").replace("```py", "").replace("```", "").strip()
+
 		

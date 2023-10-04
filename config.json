@@ -1,7 +1,7 @@
 {
     "name": "prompt-specificity",
     "model": "chatgpt-latest",
-    "run_test": "python generate_code.py 'test_data' openai 1",
+    "run_test": "python generate_code.py test_data openai 1",
     "run_score": "python test_driver.py test_data/ 'gpt-4'",
     "tags": ["Python", "prompts", "correctness"]
 }

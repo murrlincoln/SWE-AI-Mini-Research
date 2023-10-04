@@ -99,6 +99,8 @@ def execute_function(function_code, parameters):
 	# 	return error_info
 
 def test_solution_run(problemContext, runContext):
+	with open('debug.txt', 'a') as f:
+		f.write("Inside test_solution_run\n")
 	generated_path = runContext.generatedPath()
 	function_prototype = problemContext.functionPrototype()
 	
@@ -135,6 +137,10 @@ def test_solution_run(problemContext, runContext):
 				'tests_passed': tests_passed,
 				'total_tests': total_tests
 			}
+
+			# write to debug.txt that we're at the end of this
+			with open('debug.txt', 'a') as f:
+				f.write(f"Tests passed: {tests_passed}/{total_tests}\n")
 			
 	return test_results
 
@@ -172,11 +178,16 @@ if __name__ == "__main__":
 					if solution_file in aggregate_test_results:
 						aggregate_test_results[solution_file]['tests_passed'] += test_counts['tests_passed']
 						aggregate_test_results[solution_file]['total_tests'] += test_counts['total_tests']
+						with open('debug.txt', 'a') as f:
+							f.write(f"Tests passed for {problemContext}: {aggregate_test_results[solution_file]['tests_passed']}/{aggregate_test_results[solution_file]['total_tests']}\n")
 					else:
 						aggregate_test_results[solution_file] = test_counts.copy()
 	else:
-		print("The provided folder path does not exist.")
+		with open('debug.txt', 'a') as f:
+			f.write("The provided folder path does not exist.\n")
 	
+	with open('debug.txt', 'a') as f:
+		f.write("Finished testing all solution files.\n")
 	# Print the final score for each solution file
 	tests_passed = 0
 	total_tests = 0
@@ -184,6 +195,8 @@ if __name__ == "__main__":
 		print(f"{solution_file}: {test_counts['tests_passed']}/{test_counts['total_tests']}")
 		tests_passed += test_counts['tests_passed']
 		total_tests += test_counts['total_tests']
+	with open('debug.txt', 'a') as f:
+		f.write(f"Overall: {tests_passed}/{total_tests}\n")
 	print(f"Overall: {tests_passed}/{total_tests}")
 
 	# CODE FOR COMPATABILITY WITH DAVID/NISALA/LINCOLN AUTOMATED GRADER/FRAMEWORK
